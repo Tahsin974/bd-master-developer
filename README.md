@@ -8,9 +8,9 @@ Welcome to the official portfolio of **BD Master Developer**, crafted with moder
 
 BD Master Developer specializes in:
 
-- Full-stack web development  
-- Custom software solutions  
-- Modern UI/UX design  
+- Full-stack web development
+- Custom software solutions
+- Modern UI/UX design
 - Scalable, performance-optimized applications
 
 Our goal is to empower businesses through clean code and powerful digital experiences.
@@ -21,9 +21,9 @@ Our goal is to empower businesses through clean code and powerful digital experi
 
 This project is built with:
 
-- **Frontend**: React.js  
-- **Styling**: Tailwind CSS + DaisyUI  
-- **Icons & Assets**: Custom SVG/PNG  
+- **Frontend**: React.js
+- **Styling**: Tailwind CSS + DaisyUI
+- **Icons & Assets**: Custom SVG/PNG
 - **Deployment**: Netlify
 
 ---
@@ -59,7 +59,7 @@ bd-master-developer/
 If you'd like to clone and run this locally:
 
 ```bash
-git clone https://github.com/yourusername/bd-master-developer.git
+git clone https://github.com/Tahsin974/bd-master-developer.git
 cd bd-master-developer
 npm install
 npm run dev
