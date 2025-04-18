@@ -1,0 +1,59 @@
+/* Move Up Animation */
+
+.move-up {
+  animation: moving-up 2s infinite alternate ease-in-out;
+}
+
+@keyframes moving-up {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/* Zoom Animation */
+
+.zoom {
+  animation: zoomimg 2s linear infinite alternate;
+}
+
+@keyframes zoomimg {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.12);
+  }
+}
+/* half rotate Animation */
+
+.half-rotate {
+  animation: half-spin 2s linear infinite alternate;
+}
+
+@keyframes half-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(45deg);
+  }
+}
+/* rotate Animation */
+
+.rotate {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
