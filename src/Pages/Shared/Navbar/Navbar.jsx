@@ -54,48 +54,50 @@ const Navbar = ({ children }) => {
         <div className="drawer-content flex flex-col">
           {/* Navbar */}
           <div
-            className={`navbar fixed top-0 z-50 transition-all duration-300 ${
-              scrolling
-                ? "bg-white shadow-sm lg:px-32 xl:lg:px-32 "
-                : "bg-transparent shadow-sm lg:px-32 xl:lg:px-32"
-            }`}
+            className={`${
+              scrolling ? "bg-white" : "bg-transparent"
+            } fixed top-0 z-50 w-full shadow-sm transition-all duration-300`}
           >
-            {/* 
+            <div className="max-w-[1280px] mx-auto w-full  py-4 flex items-center justify-between px-4">
+              {/* 
             Navbar start section with logo image
             Sets logo height to 40px and maintains aspect ratio
 
             */}
-            <div className="navbar-start ">
-              <img
-                src={logo}
-                alt="BD Master Developer Logo"
-                className="h-[40px] w-auto "
-              />
-            </div>
-            {/* Navbar end section */}
-            <div className="navbar-end">
-              {/* Horizontal nav menu for large screens */}
+              <div className="navbar-start ">
+                <img
+                  src={logo}
+                  alt="BD Master Developer Logo"
+                  className="h-[40px] w-auto "
+                />
+              </div>
+              {/* Navbar center section */}
+              <div className="navbar-center">
+                {/* Horizontal nav menu for large screens */}
 
-              <ul className="menu menu-horizontal px-1 hidden lg:flex xl:flex space-x-2.5">
-                {/* Renders dynamic nav options from the 'navOptions' variable */}
+                <ul className="menu menu-horizontal px-1 hidden lg:flex xl:flex space-x-2.5">
+                  {/* Renders dynamic nav options from the 'navOptions' variable */}
 
-                {navOptions}
-              </ul>
+                  {navOptions}
+                </ul>
+              </div>
+              {/* Navbar end section */}
+              <div className="navbar-end">
+                {/* Appointment Button */}
+                <button className="btn btn-sm md:btn-md lg:btn-lg xl:btn-lg bg-blue-800 text-white border-blue-800 shadow-none hidden lg:flex xl:flex rounded-3xl">
+                  Appointment
+                </button>
 
-              {/* Appointment Button */}
-              <button className="btn bg-blue-800 text-white border-blue-800 shadow-none hidden lg:flex xl:flex rounded-lg">
-                Appointment
-              </button>
+                {/* Hamburger menu button for small screens */}
 
-              {/* Hamburger menu button for small screens */}
-
-              <label
-                htmlFor="my-drawer-3"
-                aria-label="open sidebar"
-                className="btn btn-square btn-ghost hover:bg-white hover:text-black lg:hidden"
-              >
-                <RxHamburgerMenu size={25} />
-              </label>
+                <label
+                  htmlFor="my-drawer-3"
+                  aria-label="open sidebar"
+                  className="btn btn-square btn-ghost hover:bg-white hover:text-black lg:hidden"
+                >
+                  <RxHamburgerMenu size={25} />
+                </label>
+              </div>
             </div>
           </div>
           {/* Page content here */}
@@ -123,7 +125,7 @@ const Navbar = ({ children }) => {
             {/* Renders dynamic nav options from the 'navOptions' variable */}
             {navOptions}
             {/* appointment button */}
-            <button className="btn bg-blue-800 text-white border-blue-800 shadow-none rounded-lg">
+            <button className="btn btn-sm md:btn-md lg:btn-lg xl:btn-lg bg-blue-800 text-white border-blue-800 shadow-none rounded-3xl mt-2">
               Appointment
             </button>
           </ul>

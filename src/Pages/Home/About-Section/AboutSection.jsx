@@ -1,4 +1,7 @@
-import img from "../../../assets/About-Section/who-we-are.webp";
+import { FaCheck } from "react-icons/fa6";
+import img from "../../../assets/About-Section/about1.jpg";
+import "./AboutSection.css";
+import ButtonBlue from "../../../Components/ButtonBlue/ButtonBlue";
 const AboutSection = () => {
   return (
     <div>
@@ -8,33 +11,34 @@ const AboutSection = () => {
        ----------------------------------------------
       */}
 
-      <div className="hero bg-white text-black my-24 min-h-screen">
+      <div className="hero bg-[#F8FDFE] text-[#1D2345] my-24 min-h-screen">
         {/*
          ----------------------------------------------
         Content Wrapper - Flexbox for responsiveness 
          ----------------------------------------------
         */}
 
-        <div className="hero-content flex-col xl:flex-row lg:flex-row max-w-[1140px] mx-auto  ">
+        <div className="hero-content flex-col xl:flex-row-reverse lg:flex-row-reverse max-w-[1280px] mx-auto lg:gap-x-14 lg:gap-y-0 xl:gap-x-14 xl:gap-y-0 gap-y-20 xl:px-4 lg:px-4 md:px-4 sm:px-4 px-2">
           {/*
            ----------------------------------------------
           Left Column - Text Content 
            ----------------------------------------------
           */}
 
-          <div className="lg:w-1/2 xl:w-1/2">
-            <h5 className="text-blue-800 text-lg font-semibold">Who We Are</h5>
+          <div className="lg:w-1/2 ">
+            <h5 className="text-[#00626F] text-lg font-semibold">Who We Are</h5>
             {/* 
             ---------------------------------------------
             Main Heading 
             ----------------------------------------------
             */}
 
-            <h1 className="xl:text-5xl/snug lg:text-5xl/snug md:text-5xl/snug sm:text-5xl/snug text-4xl/snug    yatra-one-regular">
-              From Terminal to Triumph — <br /> We Are{" "}
+            <h1 className="xl:text-4xl/snug lg:text-4xl/snug md:text-4xl/snug sm:text-4xl/snug text-3xl/snug    inter-bold ">
+              Code From{" "}
               <span className="text-color bg-gradient-to-r from-[#00ffff] to-blue-800">
-                BD Masters
-              </span>
+                Another Dimension to Automate
+              </span>{" "}
+              Your Entire World
             </h1>
             {/*
             ------------------------------------------
@@ -42,23 +46,49 @@ const AboutSection = () => {
             ------------------------------------------
             */}
 
-            <p className="py-6 text-lg ruluko-regular">
+            <p className="py-6 text-base ruluko-regular">
               BD Master Developer works across multiple domains including
               software development, dynamic website development, customized
-              software solutions, and modern UI/UX design. We craft scalable,
-              high-performance applications tailored to meet your business
-              goals. Our mission is to write clean code that powers real-world
-              impact — and our dream is to grow alongside your success.
+              software solutions, and modern UI/UX design.
             </p>
+
+            {/* reasons */}
+
+            <div className="space-y-2 text-base font-semibold">
+              <div className="flex items-center gap-4  ">
+                <div className="p-2 custom-shadow rounded-full bg-[#EDEEF6] border-[#EDEEF6]">
+                  <FaCheck />
+                </div>
+                <p>Expert Developer</p>
+              </div>
+              <div className="flex items-center gap-4 ">
+                <div className="p-2 custom-shadow rounded-full bg-[#EDEEF6] border-[#EDEEF6]">
+                  <FaCheck />
+                </div>
+                <p>Fast Communication</p>
+              </div>
+              <div className="flex items-center gap-4 ">
+                <div className="p-2 custom-shadow rounded-full bg-[#EDEEF6]  border-[#EDEEF6]">
+                  <FaCheck />
+                </div>
+                <p>Unlimited Revision</p>
+              </div>
+              <div className="flex items-center gap-4 ">
+                <div className="p-2 custom-shadow rounded-full bg-[#EDEEF6] border-[#EDEEF6]">
+                  <FaCheck />
+                </div>
+                <p>24/7 Support</p>
+              </div>
+            </div>
             {/*
             --------------------------------------------
-            More About Us Button 
+            Booking Button 
             -------------------------------------------
             */}
 
-            <button className="btn bg-blue-800 text-white border-blue-800 shadow-none rounded-lg">
-              More About Us
-            </button>
+            <div className="mt-8">
+              <ButtonBlue>Book a Meeting</ButtonBlue>
+            </div>
           </div>
           {/* 
           -------------------------------------
@@ -66,8 +96,12 @@ const AboutSection = () => {
           -------------------------------------
           */}
 
-          <figure className=" lg:w-1/2 xl:w-1/2 ">
-            <img src={img} />
+          <figure className="lg:w-1/2  rounded-2xl">
+            <img
+              src={img}
+              className="rounded-3xl depth-rotate	 transition-all duration-700 ease-in-out
+               "
+            />
           </figure>
         </div>
       </div>

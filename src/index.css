@@ -2,8 +2,9 @@
 
 @plugin "daisyui";
 
-.yatra-one-regular {
-  font-family: "Yatra One", system-ui;
+.inter-bold {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
 }
@@ -27,4 +28,22 @@
   100% {
     background-position: 200%;
   }
+}
+
+.divider-neutral {
+  &:before,
+  &:after {
+    background-color: #d1d5db;
+  }
+}
+
+.custom-shadow-inner {
+  border-radius: 18px;
+  background: #f8fdfe;
+  box-shadow: 2px 2px 5px 1px #b8b9be inset, -3px -3px 7px 1px #fff inset;
+}
+.custom-shadow {
+  border-radius: 14px;
+
+  box-shadow: 4px 6px 8px 0px rgba(184, 185, 190, 0.5), -6px -6px 12px 0px #fff;
 }

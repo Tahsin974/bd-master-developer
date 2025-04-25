@@ -14,6 +14,7 @@ import node from "../../../assets/Hero-Section/nodejs-logo.png";
 import laravel from "../../../assets/Hero-Section/Laravel-Logo.png";
 import react from "../../../assets/Hero-Section/react.png";
 import vue from "../../../assets/Hero-Section/Vuejs-logo.png";
+import ButtonBlue from "../../../Components/ButtonBlue/ButtonBlue";
 
 const HeroSection = () => {
   const [Open, setOpen] = useState(false);
@@ -25,20 +26,20 @@ const HeroSection = () => {
       Hero Section with Gradient Background 
       --------------------------------------------
       */}
-      <div className="relative hero bg-gradient-to-r from-white to-[#b0f3f7] min-h-screen py-28">
+      <div className="relative hero bg-gradient-to-t from-[#B1F2F4CC] to-white  min-h-screen py-28 ">
         {/*
         ----------------------------------------------
         Hero Content Container 
         -----------------------------------------------
         */}
-        <div className="grid lg:grid-cols-2 xl:grid-cols-2 max-w-[1140px] mx-auto gap-y-16 items-center  justify-items-center">
+        <div className="grid lg:grid-cols-2 xl:grid-cols-2 max-w-[1280px] mx-auto gap-y-16 items-center  justify-items-center xl:px-4 lg:px-4 md:px-4 sm:px-4 px-2 gap-x-6">
           {/* 
           ----------------------------------------------
           Left Column: Text & Buttons 
           ----------------------------------------------
           */}
           <div className="space-y-2.5 text-black">
-            <h1 className="xl:text-5xl/normal lg:text-5xl/normal md:text-5xl/normal sm:text-5xl/normal text-4xl/normal    yatra-one-regular">
+            <h1 className="xl:text-5xl/normal lg:text-5xl/normal md:text-5xl/normal sm:text-5xl/normal text-4xl/normal    inter-bold">
               <span className="text-color bg-gradient-to-r from-[#00ffff] to-blue-800 ">
                 Empowering
               </span>{" "}
@@ -52,24 +53,20 @@ const HeroSection = () => {
             </p>
             {/* 
             ------------------------------------------------
-            Login/Registration 
+            Login/Registration (im using ButtonBlue Custom component) 
             ------------------------------------------------
             */}
-            <div className="space-x-4">
-              <button className="btn bg-blue-800 border-blue-800 text-white shadow-none rounded-lg">
-                Login
-              </button>
-              <button className="btn bg-blue-800 text-white border-blue-800 shadow-none rounded-lg">
-                Registration
-              </button>
+            <div className="space-x-4 mb-14">
+              <ButtonBlue>Login</ButtonBlue>
+              <ButtonBlue>Registration</ButtonBlue>
             </div>
             {/*
             -------------------------------------------
             Tech Logos with Animation 
             -------------------------------------------
             */}
-            <div className="grid xl:grid-cols-6 lg:grid-cols-6 md:grid-cols-6 grid-cols-3 items-center gap-4 gap-y-8 justify-items-center mt-6">
-              <img src={bootstrap} alt="bootstrap" className="move-up w-10" />
+            <div className="lg:w-11/12 xl:w-11/12 grid xl:grid-cols-6 lg:grid-cols-6 md:grid-cols-6 grid-cols-3 items-center gap-4 gap-y-8 justify-items-center mt-6">
+              <img src={bootstrap} alt="bootstrap" className="move-up w-10  " />
               <img src={tailwind} alt="tailwind" className="zoom w-16" />
               <img src={node} alt="node" className="move-up w-10" />
               <img src={laravel} alt="laravel" className="half-rotate w-10" />
@@ -96,7 +93,7 @@ const HeroSection = () => {
                     Animated Play Button Ping 
                     ------------------------------------------
                     */}
-                    <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-white opacity-75 "></span>
+                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-white opacity-75 "></span>
                     {/*
                     
                     -----------------------------------------

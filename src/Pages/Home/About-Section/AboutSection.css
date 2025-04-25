@@ -1,0 +1,3 @@
+.depth-rotate {
+  transform: perspective(1000px) rotateY(25deg);
+}
