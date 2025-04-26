@@ -1,0 +1,19 @@
+.social-links {
+  background: rgba(230, 247, 250, 0.7);
+  backdrop-filter: blur(7px);
+}
+.social-links > button {
+  box-shadow: -4.505px -4.505px 6.006px 0px rgba(255, 255, 255, 0.6),
+    4.01px 4.01px 14.01px 0px rgba(0, 0, 0, 0.14);
+}
+.card-animation .social-links {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease-in-out, visibility 1s linear 0.5s;
+}
+
+.card-animation:hover .social-links {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease-in-out;
+}

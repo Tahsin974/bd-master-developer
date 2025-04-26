@@ -1,7 +1,7 @@
-.button-blue-custom {
+.button-white-custom {
   border-radius: 90px;
-  background: var(--Primary-500, #4654a4);
-  border-color: var(--Primary-500, #4654a4);
+  background: var(--Primary-500, #f8fdfe);
+  border-color: var(--Primary-500, rgba(0, 0, 0, 0.02));
   box-shadow: -4.505px -4.505px 6.006px 0px rgba(255, 255, 255, 0.6),
     6.006px 6.006px 6.006px 0px rgba(0, 0, 0, 0.14);
 }

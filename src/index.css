@@ -13,6 +13,11 @@
   font-weight: 400;
   font-style: normal;
 }
+.ruluko-bold {
+  font-family: "Ruluko", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
 
 .text-color {
   background-size: 200%;
@@ -44,6 +49,7 @@
 }
 .custom-shadow {
   border-radius: 14px;
-
-  box-shadow: 4px 6px 8px 0px rgba(184, 185, 190, 0.5), -6px -6px 12px 0px #fff;
+  border: 1px solid #e5e8f2;
+  background: #f8fdfe;
+  box-shadow: 4px 6px 16px 0px rgba(184, 185, 190, 0.5), -6px -6px 12px 0px #fff;
 }

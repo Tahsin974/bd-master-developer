@@ -15,9 +15,13 @@
 .swiper {
   margin-inline: auto;
 }
-.swiper-wrapper {
+.my-swiper-wrapper {
   padding-top: 90px;
   padding-bottom: 120px;
+}
+.my-swiper-wrapper2 {
+  padding-top: 90px;
+  padding-bottom: 50px;
 }
 .swiper-pagination-bullet-active {
   width: 13px;

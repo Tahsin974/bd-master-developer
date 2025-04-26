@@ -1,7 +1,7 @@
 import "./ButtonBlue.css";
 const ButtonBlue = ({ children }) => {
   return (
-    <button className="btn btn-sm md:btn-md lg:btn-lg xl:btn-lg bg-blue-800 text-white border-blue-800  button-blue-custom">
+    <button className="btn btn-sm md:btn-md lg:btn-lg xl:btn-lg text-white   button-blue-custom ruluko-bold">
       {children}
     </button>
   );

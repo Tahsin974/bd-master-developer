@@ -26,7 +26,7 @@ const HeroSection = () => {
       Hero Section with Gradient Background 
       --------------------------------------------
       */}
-      <div className="relative hero bg-gradient-to-t from-[#B1F2F4CC] to-white  min-h-screen py-28 ">
+      <div className="relative hero bg-gradient-to-t from-[#B1F2F4CC] to-white  min-h-screen pt-36 pb-28">
         {/*
         ----------------------------------------------
         Hero Content Container 

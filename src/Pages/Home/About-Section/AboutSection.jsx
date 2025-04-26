@@ -1,4 +1,4 @@
-import { FaCheck } from "react-icons/fa6";
+import { FaArrowRightLong, FaCheck } from "react-icons/fa6";
 import img from "../../../assets/About-Section/about1.jpg";
 import "./AboutSection.css";
 import ButtonBlue from "../../../Components/ButtonBlue/ButtonBlue";
@@ -26,7 +26,7 @@ const AboutSection = () => {
           */}
 
           <div className="lg:w-1/2 ">
-            <h5 className="text-[#00626F] text-lg font-semibold">Who We Are</h5>
+            <h5 className="text-[#00626F] text-lg ruluko-bold">Who We Are</h5>
             {/* 
             ---------------------------------------------
             Main Heading 
@@ -87,7 +87,9 @@ const AboutSection = () => {
             */}
 
             <div className="mt-8">
-              <ButtonBlue>Book a Meeting</ButtonBlue>
+              <ButtonBlue>
+                Book a Meeting <FaArrowRightLong />
+              </ButtonBlue>
             </div>
           </div>
           {/* 

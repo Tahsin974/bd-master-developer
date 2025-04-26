@@ -9,7 +9,7 @@ import graphicsDesign from "../../../assets/Services-Section/graphic-design.png"
 const ServiceSection = () => {
   return (
     <div>
-      <div className=" bg-[#F8FDFE] py-20 my-24 ">
+      <div className=" bg-[#F8FDFE] py-10 my-24 ">
         <div className="max-w-[1280px] mx-auto xl:px-4 lg:px-4 md:px-4 sm:px-4 px-2 space-y-16">
           {/*
           -----------------------------------------------
@@ -28,13 +28,13 @@ const ServiceSection = () => {
           Services 
           -----------------------------------------------
           */}
-          <div className="grid xl:grid-cols-6 lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 gap-6 justify-items-center-safe">
+          <div className="grid xl:grid-cols-6 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 gap-6 justify-items-center-safe">
             {/*
           ----------------------------------------------
           Website Development Card #193cb8
           ----------------------------------------------
           */}
-            <div className="card  bg-[#F8FDFE] w-[184px] h-[200px] custom-shadow rounded-2xl border border-gray-100 transition duration-300 ease-in-out hover:-translate-y-4  my-auto   px-3 py-7 ">
+            <div className="card   w-[184px] h-[200px] custom-shadow transition duration-300 ease-in-out hover:-translate-y-4  my-auto   px-3 py-7 ">
               <div className="  items-center  text-center  ">
                 <div className="w-16 h-16 mx-auto flex items-center justify-center bg-[#f9fafb] shadow-gray-400 rounded-xl  custom-shadow-inner mb-7">
                   <img className="w-10 h-10" src={web} />
@@ -47,7 +47,7 @@ const ServiceSection = () => {
           UI UX Card #193cb8
           ----------------------------------------------
           */}
-            <div className="card  bg-[#F8FDFE] w-[184px] h-[200px] custom-shadow rounded-2xl border border-gray-100 transition duration-300 ease-in-out hover:-translate-y-4  my-auto   px-3 py-7 ">
+            <div className="card   w-[184px] h-[200px] custom-shadow transition duration-300 ease-in-out hover:-translate-y-4  my-auto   px-3 py-7 ">
               <div className="  items-center  text-center space-y-3.5 ">
                 <div className="w-16 h-16 mx-auto flex items-center justify-center bg-[#f9fafb] shadow-gray-400 rounded-xl  custom-shadow-inner mb-7">
                   <img className="w-10 h-10" src={UiUx} />
@@ -60,7 +60,7 @@ const ServiceSection = () => {
           Digital Marketing Card #193cb8
           ----------------------------------------------
           */}
-            <div className="card  bg-[#F8FDFE] w-[184px] h-[200px] custom-shadow rounded-2xl border border-gray-100 transition duration-300 ease-in-out hover:-translate-y-4  my-auto   px-3 py-7 ">
+            <div className="card   w-[184px] h-[200px] custom-shadow transition duration-300 ease-in-out hover:-translate-y-4  my-auto   px-3 py-7 ">
               <div className="  items-center  text-center space-y-3.5 ">
                 <div className="w-16 h-16 mx-auto flex items-center justify-center bg-[#f9fafb] shadow-gray-400 rounded-xl  custom-shadow-inner mb-7">
                   <img className="w-10 h-10" src={digital} />
@@ -75,7 +75,7 @@ const ServiceSection = () => {
           SEO Card #193cb8
           ----------------------------------------------
           */}
-            <div className="card  bg-[#F8FDFE] w-[184px] h-[200px] custom-shadow rounded-2xl border border-gray-100 transition duration-300 ease-in-out hover:-translate-y-4  my-auto   px-3 py-7 ">
+            <div className="card   w-[184px] h-[200px] custom-shadow transition duration-300 ease-in-out hover:-translate-y-4  my-auto   px-3 py-7 ">
               <div className="  items-center  text-center space-y-3.5 ">
                 <div className="w-16 h-16 mx-auto flex items-center justify-center bg-[#f9fafb] shadow-gray-400 rounded-xl  custom-shadow-inner mb-7">
                   <img className="w-10 h-10" src={seo} />
@@ -88,7 +88,7 @@ const ServiceSection = () => {
           Video Editing Card #193cb8
           ----------------------------------------------
           */}
-            <div className="card  bg-[#F8FDFE] w-[184px] h-[200px] custom-shadow rounded-2xl border border-gray-100 transition duration-300 ease-in-out hover:-translate-y-4  my-auto   px-3 py-7 ">
+            <div className="card   w-[184px] h-[200px] custom-shadow transition duration-300 ease-in-out hover:-translate-y-4  my-auto   px-3 py-7 ">
               <div className="  items-center  text-center space-y-3.5 ">
                 <div className="w-16 h-16 mx-auto flex items-center justify-center bg-[#f9fafb] shadow-gray-400 rounded-xl  custom-shadow-inner mb-7">
                   <img className="w-10 h-10" src={videoEdit} />
@@ -101,7 +101,7 @@ const ServiceSection = () => {
           Graphics Design Card #193cb8
           ----------------------------------------------
           */}
-            <div className="card  bg-[#F8FDFE] w-[184px] h-[200px] custom-shadow rounded-2xl border border-gray-100 transition duration-300 ease-in-out hover:-translate-y-4  my-auto   px-3 py-7 ">
+            <div className="card   w-[184px] h-[200px] custom-shadow transition duration-300 ease-in-out hover:-translate-y-4  my-auto   px-3 py-7 ">
               <div className="  items-center  text-center space-y-3.5 ">
                 <div className="w-16 h-16 mx-auto flex items-center justify-center bg-[#f9fafb] shadow-gray-400 rounded-xl  custom-shadow-inner mb-7">
                   <img className="w-10 h-10" src={graphicsDesign} />

@@ -12,7 +12,7 @@ const AccomplishmentSection = () => {
       Accomplishment-Section Container 
        ----------------------------------------------
       */}
-      <div className=" bg-white text-black my-24 ">
+      <div className=" bg-[#F8FDFE] text-black my-24 ">
         <div className=" max-w-[1280px] mx-auto xl:px-4 lg:px-4 md:px-4 sm:px-4 px-2">
           <div>
             {/*
@@ -21,13 +21,13 @@ const AccomplishmentSection = () => {
        ----------------------------------------------
       */}
 
-            <div className="grid xl:grid-cols-6 lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 gap-6 justify-items-center-safe ">
+            <div className="grid xl:grid-cols-6 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 gap-6 justify-items-center-safe ">
               {/*
               ----------------------------------------------
               Projects Card 
               ----------------------------------------------
               */}
-              <div className="card  bg-[#F8FDFE] w-[184px] h-[248px] custom-shadow rounded-2xl border border-gray-100 transition duration-300 ease-in-out hover:-translate-y-4  my-auto   px-3 py-7 ">
+              <div className="card   w-[184px] h-[248px] custom-shadow transition duration-300 ease-in-out hover:-translate-y-4  my-auto   px-3 py-7 ">
                 <div className="items-center  text-center space-y-2">
                   <div className="w-16 h-16 mx-auto flex items-center justify-center custom-shadow-inner mb-7">
                     <img className="w-10 h-10" src={projects} />
@@ -44,7 +44,7 @@ const AccomplishmentSection = () => {
               Products Card 
               ----------------------------------------------
               */}
-              <div className="card  bg-[#F8FDFE] w-[184px] h-[248px] custom-shadow rounded-2xl border border-gray-100 transition duration-300 ease-in-out hover:-translate-y-4  my-auto   px-3 py-7 ">
+              <div className="card   w-[184px] h-[248px] custom-shadow transition duration-300 ease-in-out hover:-translate-y-4  my-auto   px-3 py-7 ">
                 <div className="items-center  text-center space-y-2">
                   <div className="w-16 h-16 mx-auto flex items-center justify-center bg-[#f9fafb] shadow-gray-400 rounded-xl  custom-shadow-inner mb-7">
                     <img className="w-10 h-10" src={products} />
@@ -60,7 +60,7 @@ const AccomplishmentSection = () => {
               Experts Card 
               ----------------------------------------------
               */}
-              <div className="card  bg-[#F8FDFE] w-[184px] h-[248px] custom-shadow rounded-2xl border border-gray-100 transition duration-300 ease-in-out hover:-translate-y-4  my-auto   px-3 py-7 ">
+              <div className="card   w-[184px] h-[248px] custom-shadow transition duration-300 ease-in-out hover:-translate-y-4  my-auto   px-3 py-7 ">
                 <div className="items-center  text-center space-y-2">
                   <div className="w-16 h-16 mx-auto flex items-center justify-center bg-[#f9fafb] shadow-gray-400 rounded-xl custom-shadow-inner mb-7">
                     <img className="w-10 h-10" src={experts} />
@@ -76,7 +76,7 @@ const AccomplishmentSection = () => {
               Countries Card 
               ----------------------------------------------
               */}
-              <div className="card  bg-[#F8FDFE] w-[184px] h-[248px] custom-shadow rounded-2xl border border-gray-100 transition duration-300 ease-in-out hover:-translate-y-4  my-auto   px-3 py-7 ">
+              <div className="card   w-[184px] h-[248px] custom-shadow transition duration-300 ease-in-out hover:-translate-y-4  my-auto   px-3 py-7 ">
                 <div className="items-center  text-center space-y-2">
                   <div className="w-16 h-16 mx-auto flex items-center justify-center bg-[#f9fafb] shadow-gray-400 rounded-xl custom-shadow-inner mb-7">
                     <img className="w-10 h-10 " src={countries} />
@@ -92,7 +92,7 @@ const AccomplishmentSection = () => {
               Happy Clients Card 
               ----------------------------------------------
               */}
-              <div className="card  bg-[#F8FDFE] w-[184px] h-[248px] custom-shadow rounded-2xl border border-gray-100 transition duration-300 ease-in-out hover:-translate-y-4  my-auto   px-3 py-7 ">
+              <div className="card   w-[184px] h-[248px] custom-shadow transition duration-300 ease-in-out hover:-translate-y-4  my-auto   px-3 py-7 ">
                 <div className="items-center  text-center space-y-2">
                   <div className="w-16 h-16 mx-auto flex items-center justify-center bg-[#f9fafb] shadow-gray-400 rounded-xl custom-shadow-inner mb-7">
                     <img className="w-10 h-10" src={happyclient} />
@@ -108,7 +108,7 @@ const AccomplishmentSection = () => {
               Experience Card 
               ----------------------------------------------
               */}
-              <div className="card  bg-[#F8FDFE] w-[184px] h-[248px] custom-shadow rounded-2xl border border-gray-100 transition duration-300 ease-in-out hover:-translate-y-4  my-auto   px-3 py-7 ">
+              <div className="card   w-[184px] h-[248px] custom-shadow transition duration-300 ease-in-out hover:-translate-y-4  my-auto   px-3 py-7 ">
                 <div className="items-center  text-center space-y-2">
                   <div className="w-16 h-16 mx-auto flex items-center justify-center bg-[#f9fafb] shadow-gray-400 rounded-xl custom-shadow-inner mb-7">
                     <img className="w-10 h-10 " src={experience} />

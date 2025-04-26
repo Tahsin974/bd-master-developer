@@ -1,0 +1,27 @@
+.small-logo {
+  display: flex;
+  width: 47.778px;
+  height: 47.778px;
+  padding: 4.313px 4.55px 4.313px 4.408px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  border: 0.332px solid #eaecf0;
+  background: #fff;
+  box-shadow: 1.991px 1.991px 3.981px 0px rgba(0, 0, 0, 0.12),
+    -1.991px -1.991px 3.981px 0px rgba(255, 255, 255, 0.4);
+}
+.small-logo > figure {
+  display: flex;
+  width: 38.819px;
+  height: 39.151px;
+  padding: 2.187px 3.228px 0.965px 3.592px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0.664px 0.664px 1.659px 0.332px #b8b9be inset,
+    -0.995px -0.995px 2.323px 0.332px #fff inset;
+}
