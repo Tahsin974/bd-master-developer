@@ -43,7 +43,7 @@ const Navbar = ({ children }) => {
         <Link
           to="/projects"
           className={` text-[#1D2345] text-lg bg-transparent  ${
-            selectedLink === "/projects" && "selected-link"
+            selectedLink === "/projects" && "xl:selected-link lg:selected-link"
           }`}
         >
           Projects
