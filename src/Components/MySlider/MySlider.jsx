@@ -13,6 +13,7 @@ const MySlider = ({
   buttonPrev,
   buttonNext,
   view = 6,
+  mobileViewXs = 2,
   mobileView = 2,
   tabletView = 3,
   laptopView = 4,
@@ -37,12 +38,16 @@ const MySlider = ({
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         pagination={isPagination}
         loop={true}
-        slidesPerView={mobileView}
+        slidesPerView={mobileViewXs}
         spaceBetween={10}
         breakpoints={{
+          320: {
+            slidesPerView: mobileViewXs,
+            spaceBetween: 10,
+          },
           420: {
             slidesPerView: mobileView,
-            spaceBetween: 30,
+            spaceBetween: 10,
           },
           612: {
             slidesPerView: tabletView,

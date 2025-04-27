@@ -1,0 +1,30 @@
+.menu > li > a {
+  color: #1d2345;
+  font-size: 18px;
+  position: relative;
+}
+.menu > li > a:active {
+  background-color: transparent;
+  color: #1d2345;
+}
+
+.menu > li > a::before {
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1d2345;
+  transition: 0.3s;
+}
+.menu > li:hover > a::before {
+  content: "";
+  width: 100%;
+  transition: 0.3s;
+}
+.menu > li > .selected-link::before {
+  content: "";
+  width: 100%;
+}

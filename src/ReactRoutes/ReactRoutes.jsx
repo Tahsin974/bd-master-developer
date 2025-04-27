@@ -1,11 +1,18 @@
 import { createBrowserRouter } from "react-router";
 import MainLayOut from "../LayOut/MainLayOut";
-import HomePageLayOut from "../Pages/Home/Home-Page-LayOut/HomePageLayOut";
+import SelectedLinkProvider from "../Provider/SelectedLinkProvider/SelectedLinkProvider";
+import HomePageLayOut from "../Pages/HomePage/Home-Page-LayOut/HomePageLayOut";
+import ServicesPageLayout from "../Pages/ServicesPage/ServicesPageLayout/ServicesPageLayout";
+import ProjectPageLayout from "../Pages/ProjectPage/ProjectPageLayOut/ProjectPageLayout";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <MainLayOut />,
+    element: (
+      <SelectedLinkProvider>
+        <MainLayOut />
+      </SelectedLinkProvider>
+    ),
     children: [
       {
         path: "/",
@@ -14,6 +21,14 @@ const router = createBrowserRouter([
       {
         path: "/home",
         element: <HomePageLayOut />,
+      },
+      {
+        path: "/services",
+        element: <ServicesPageLayout />,
+      },
+      {
+        path: "/projects",
+        element: <ProjectPageLayout />,
       },
     ],
   },

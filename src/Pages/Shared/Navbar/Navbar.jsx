@@ -3,7 +3,10 @@ import logo from "../../../assets/Logo/logo.png";
 import { Link } from "react-router";
 import { useEffect, useRef, useState } from "react";
 import { IoCloseOutline } from "react-icons/io5";
+import "./Navbar.css";
+import useSelectedLinkContext from "../../../Context/useSelectedLinkContext";
 const Navbar = ({ children }) => {
+  const { selectedLink } = useSelectedLinkContext();
   const [scrolling, setScrolling] = useState(false);
   // menu close handle function
   const drawerRef = useRef(null);
@@ -16,16 +19,41 @@ const Navbar = ({ children }) => {
   const navOptions = (
     <>
       <li>
-        <Link className="font-semibold text-black text-lg">Home</Link>
+        <Link
+          to="/home"
+          className={` text-[#1D2345] text-lg bg-transparent  ${
+            (selectedLink === "/home" && "selected-link") ||
+            (selectedLink === "/" && "selected-link")
+          }`}
+        >
+          Home
+        </Link>
       </li>
       <li>
-        <Link className="font-semibold text-black text-lg">Service</Link>
+        <Link
+          to="/services"
+          className={` text-[#1D2345] text-lg bg-transparent  ${
+            selectedLink === "/services" && "selected-link"
+          }`}
+        >
+          Services
+        </Link>
       </li>
       <li>
-        <Link className="font-semibold text-black text-lg">About</Link>
+        <Link
+          to="/projects"
+          className={` text-[#1D2345] text-lg bg-transparent  ${
+            selectedLink === "/projects" && "selected-link"
+          }`}
+        >
+          Projects
+        </Link>
       </li>
       <li>
-        <Link className="font-semibold text-black text-lg">Contact Us</Link>
+        <Link>About Us</Link>
+      </li>
+      <li>
+        <Link>Contact Us</Link>
       </li>
     </>
   );
@@ -65,17 +93,19 @@ const Navbar = ({ children }) => {
 
             */}
               <div className="navbar-start ">
-                <img
-                  src={logo}
-                  alt="BD Master Developer Logo"
-                  className="h-[40px] w-auto "
-                />
+                <Link className="/">
+                  <img
+                    src={logo}
+                    alt="BD Master Developer Logo"
+                    className="h-[40px] w-auto "
+                  />
+                </Link>
               </div>
               {/* Navbar center section */}
               <div className="navbar-center">
                 {/* Horizontal nav menu for large screens */}
 
-                <ul className="menu menu-horizontal px-1 hidden lg:flex xl:flex space-x-2.5">
+                <ul className="menu menu-horizontal px-1 xl:ml-64 lg:ml-36 hidden lg:flex xl:flex space-x-2.5">
                   {/* Renders dynamic nav options from the 'navOptions' variable */}
 
                   {navOptions}
@@ -93,7 +123,7 @@ const Navbar = ({ children }) => {
                 <label
                   htmlFor="my-drawer-3"
                   aria-label="open sidebar"
-                  className="btn btn-square btn-ghost hover:bg-white hover:text-black lg:hidden"
+                  className="btn btn-square btn-ghost hover:bg-white hover:text-[#1D2345] active:bg-white active:border-white active:text-[#1D2345] lg:hidden"
                 >
                   <RxHamburgerMenu size={25} />
                 </label>
@@ -116,7 +146,7 @@ const Navbar = ({ children }) => {
           <ul className="menu bg-white min-h-full w-80 p-4">
             <button
               onClick={handleMenu}
-              className="btn bg-transparent border-transparent text-black btn-ghost ms-auto text-2xl font-bold cursor-pointer"
+              className="btn bg-transparent border-transparent text-[#1D2345] btn-ghost ms-auto text-2xl font-bold cursor-pointer"
             >
               <IoCloseOutline />
             </button>
