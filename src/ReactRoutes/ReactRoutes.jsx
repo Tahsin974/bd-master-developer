@@ -4,6 +4,8 @@ import SelectedLinkProvider from "../Provider/SelectedLinkProvider/SelectedLinkP
 import HomePageLayOut from "../Pages/HomePage/Home-Page-LayOut/HomePageLayOut";
 import ServicesPageLayout from "../Pages/ServicesPage/ServicesPageLayout/ServicesPageLayout";
 import ProjectPageLayout from "../Pages/ProjectPage/ProjectPageLayOut/ProjectPageLayout";
+import AboutPageLayout from "../Pages/AboutPage/AboutPageLayOut/AboutPageLayout";
+import ContactPageLayOut from "../Pages/ContactPage/ContactPageLayOut/ContactPageLayOut";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +31,14 @@ const router = createBrowserRouter([
       {
         path: "/projects",
         element: <ProjectPageLayout />,
+      },
+      {
+        path: "/about",
+        element: <AboutPageLayout />,
+      },
+      {
+        path: "/contact",
+        element: <ContactPageLayOut />,
       },
     ],
   },

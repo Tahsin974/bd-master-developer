@@ -1,110 +1,114 @@
-import SectionTitle from "../../../Components/Section-Title/SectionTitle";
-import web from "../../../assets/Services-Section/web-development.svg";
-import UiUx from "../../../assets/Services-Section/ui-ux.svg";
-import digital from "../../../assets/Services-Section/digital-marketing.svg";
-import seo from "../../../assets/Services-Section/seo.svg";
-import videoEdit from "../../../assets/Services-Section/video-editing.svg";
-import graphicsDesign from "../../../assets/Services-Section/graphic-design.svg";
+import SectionTitle from "../../../Components/Section-Title/SectionTitle"; // Import SectionTitle component
+import web from "../../../assets/Services-Section/web-development.png"; // Import the image for web development service
+import UiUx from "../../../assets/Services-Section/ui-ux.png"; // Import the image for UI/UX design service
+import digital from "../../../assets/Services-Section/digital-marketing.png"; // Import the image for digital marketing service
+import seo from "../../../assets/Services-Section/seo.png"; // Import the image for SEO service
+import videoEdit from "../../../assets/Services-Section/video-editing.png"; // Import the image for video editing service
+import graphicsDesign from "../../../assets/Services-Section/graphic-design.png"; // Import the image for graphic design service
 
 const ServiceSection = () => {
   return (
     <div>
+      {/* Container with background color and padding */}
       <div className=" bg-[#F8FDFE] py-10 my-24 ">
-        <div className="max-w-[1280px] mx-auto xl:px-4 lg:px-4 md:px-4 sm:px-4 px-2 space-y-16">
-          {/*
-          -----------------------------------------------
-          Section Title 
-          -----------------------------------------------
-          */}
-          <SectionTitle heading={"Industry We Serve"} subheading={"Services"}>
+        <div className="max-w-[1280px] mx-auto px-4 space-y-16">
+          {/* Section Title */}
+          <SectionTitle
+            heading={
+              <>
+                <span className="text-color bg-gradient-to-r from-[#00ffff] to-blue-800">
+                  Industry
+                </span>{" "}
+                We Serve
+              </>
+            }
+            subheading={"Services"}
+          >
+            {/* Description text below the Section Title */}
             <p className="ruluko-regular font-semibold text-gray-500">
               Bd Master Developer works in multiple Sector including website
-              development,API development,Digital Marketing , UI/UX & SEO.Our
-              dream is to continue your journey with success{" "}
+              development, API development, Digital Marketing, UI/UX & SEO. Our
+              dream is to continue your journey with success.
             </p>
           </SectionTitle>
-          {/*
-          -----------------------------------------------
-          Services 
-          -----------------------------------------------
-          */}
+
+          {/* Services grid layout */}
           <div className="grid xl:grid-cols-6 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 gap-6 justify-items-center-safe">
-            {/*
-          ----------------------------------------------
-          Website Development Card #193cb8
-          ----------------------------------------------
-          */}
-            <div className="card   w-[184px] h-[200px] custom-shadow transition duration-300 ease-in-out hover:-translate-y-4  my-auto   px-3 py-7 ">
-              <div className="  items-center  text-center  ">
-                <div className="w-16 h-16 mx-auto flex items-center justify-center bg-[#f9fafb] shadow-gray-400 rounded-xl  custom-shadow-inner mb-7">
-                  <img className="w-10 h-10" src={web} />
+            {/* Website Development Service Card */}
+            <div className="card w-[184px] h-[200px] custom-shadow transition duration-300 ease-in-out hover:-translate-y-4 my-auto px-3 py-7">
+              <div className="items-center text-center">
+                {/* Icon and title for Website Development */}
+                <div className="w-16 h-16 mx-auto flex items-center justify-center bg-[#f9fafb] shadow-gray-400 rounded-xl custom-shadow-inner mb-7">
+                  <img className="w-10 h-10" src={web} alt="Web Development" />
                 </div>
-                <h5 className="text-lg font-semibold ">Website Development</h5>
+                <h5 className="text-lg font-semibold">Website Development</h5>
               </div>
             </div>
-            {/*
-          ----------------------------------------------
-          UI UX Card #193cb8
-          ----------------------------------------------
-          */}
-            <div className="card   w-[184px] h-[200px] custom-shadow transition duration-300 ease-in-out hover:-translate-y-4  my-auto   px-3 py-7 ">
-              <div className="  items-center  text-center space-y-3.5 ">
-                <div className="w-16 h-16 mx-auto flex items-center justify-center bg-[#f9fafb] shadow-gray-400 rounded-xl  custom-shadow-inner mb-7">
-                  <img className="w-10 h-10" src={UiUx} />
+
+            {/* UI/UX Design Service Card */}
+            <div className="card w-[184px] h-[200px] custom-shadow transition duration-300 ease-in-out hover:-translate-y-4 my-auto px-3 py-7">
+              <div className="items-center text-center space-y-3.5">
+                {/* Icon and title for UI/UX Design */}
+                <div className="w-16 h-16 mx-auto flex items-center justify-center bg-[#f9fafb] shadow-gray-400 rounded-xl custom-shadow-inner mb-7">
+                  <img className="w-10 h-10" src={UiUx} alt="UI/UX Design" />
                 </div>
                 <h5 className="text-lg font-semibold mt-7">UI/UX Design</h5>
               </div>
             </div>
-            {/*
-          ----------------------------------------------
-          Digital Marketing Card #193cb8
-          ----------------------------------------------
-          */}
-            <div className="card   w-[184px] h-[200px] custom-shadow transition duration-300 ease-in-out hover:-translate-y-4  my-auto   px-3 py-7 ">
-              <div className="  items-center  text-center space-y-3.5 ">
-                <div className="w-16 h-16 mx-auto flex items-center justify-center bg-[#f9fafb] shadow-gray-400 rounded-xl  custom-shadow-inner mb-7">
-                  <img className="w-10 h-10" src={digital} />
+
+            {/* Digital Marketing Service Card */}
+            <div className="card w-[184px] h-[200px] custom-shadow transition duration-300 ease-in-out hover:-translate-y-4 my-auto px-3 py-7">
+              <div className="items-center text-center space-y-3.5">
+                {/* Icon and title for Digital Marketing */}
+                <div className="w-16 h-16 mx-auto flex items-center justify-center bg-[#f9fafb] shadow-gray-400 rounded-xl custom-shadow-inner mb-7">
+                  <img
+                    className="w-10 h-10"
+                    src={digital}
+                    alt="Digital Marketing"
+                  />
                 </div>
                 <h5 className="text-lg font-semibold mt-7">
                   Digital Marketing
                 </h5>
               </div>
             </div>
-            {/*
-          ----------------------------------------------
-          SEO Card #193cb8
-          ----------------------------------------------
-          */}
-            <div className="card   w-[184px] h-[200px] custom-shadow transition duration-300 ease-in-out hover:-translate-y-4  my-auto   px-3 py-7 ">
-              <div className="  items-center  text-center space-y-3.5 ">
-                <div className="w-16 h-16 mx-auto flex items-center justify-center bg-[#f9fafb] shadow-gray-400 rounded-xl  custom-shadow-inner mb-7">
-                  <img className="w-10 h-10" src={seo} />
+
+            {/* SEO Service Card */}
+            <div className="card w-[184px] h-[200px] custom-shadow transition duration-300 ease-in-out hover:-translate-y-4 my-auto px-3 py-7">
+              <div className="items-center text-center space-y-3.5">
+                {/* Icon and title for SEO */}
+                <div className="w-16 h-16 mx-auto flex items-center justify-center bg-[#f9fafb] shadow-gray-400 rounded-xl custom-shadow-inner mb-7">
+                  <img className="w-10 h-10" src={seo} alt="SEO" />
                 </div>
                 <h5 className="text-lg font-semibold mt-7">SEO</h5>
               </div>
             </div>
-            {/*
-          ----------------------------------------------
-          Video Editing Card #193cb8
-          ----------------------------------------------
-          */}
-            <div className="card   w-[184px] h-[200px] custom-shadow transition duration-300 ease-in-out hover:-translate-y-4  my-auto   px-3 py-7 ">
-              <div className="  items-center  text-center space-y-3.5 ">
-                <div className="w-16 h-16 mx-auto flex items-center justify-center bg-[#f9fafb] shadow-gray-400 rounded-xl  custom-shadow-inner mb-7">
-                  <img className="w-10 h-10" src={videoEdit} />
+
+            {/* Video Editing Service Card */}
+            <div className="card w-[184px] h-[200px] custom-shadow transition duration-300 ease-in-out hover:-translate-y-4 my-auto px-3 py-7">
+              <div className="items-center text-center space-y-3.5">
+                {/* Icon and title for Video Editing */}
+                <div className="w-16 h-16 mx-auto flex items-center justify-center bg-[#f9fafb] shadow-gray-400 rounded-xl custom-shadow-inner mb-7">
+                  <img
+                    className="w-10 h-10"
+                    src={videoEdit}
+                    alt="Video Editing"
+                  />
                 </div>
                 <h5 className="text-lg font-semibold mt-7">Video Editing</h5>
               </div>
             </div>
-            {/*
-          ----------------------------------------------
-          Graphics Design Card #193cb8
-          ----------------------------------------------
-          */}
-            <div className="card   w-[184px] h-[200px] custom-shadow transition duration-300 ease-in-out hover:-translate-y-4  my-auto   px-3 py-7 ">
-              <div className="  items-center  text-center space-y-3.5 ">
-                <div className="w-16 h-16 mx-auto flex items-center justify-center bg-[#f9fafb] shadow-gray-400 rounded-xl  custom-shadow-inner mb-7">
-                  <img className="w-10 h-10" src={graphicsDesign} />
+
+            {/* Graphics Design Service Card */}
+            <div className="card w-[184px] h-[200px] custom-shadow transition duration-300 ease-in-out hover:-translate-y-4 my-auto px-3 py-7">
+              <div className="items-center text-center space-y-3.5">
+                {/* Icon and title for Graphics Design */}
+                <div className="w-16 h-16 mx-auto flex items-center justify-center bg-[#f9fafb] shadow-gray-400 rounded-xl custom-shadow-inner mb-7">
+                  <img
+                    className="w-10 h-10"
+                    src={graphicsDesign}
+                    alt="Graphics Design"
+                  />
                 </div>
                 <h5 className="text-lg font-semibold mt-7">Graphics Design</h5>
               </div>

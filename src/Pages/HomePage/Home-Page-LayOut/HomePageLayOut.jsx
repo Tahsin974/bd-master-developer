@@ -1,4 +1,4 @@
-import BuildSection from "../../Shared/Build-Section/BuildSection";
+import ConsultationSection from "../../Shared/Consultation-Section/ConsultationSection";
 import OurSupportSection from "../../Shared/OurSupport-Section/OurSupportSection";
 import TestimonialSection from "../../Shared/Testimonial-Section/TestimonialSection";
 import AboutSection from "../About-Section/AboutSection";
@@ -21,7 +21,7 @@ const HomePageLayOut = () => {
       <TeamMemberSection />
       <ArticlesSection />
       <OurSupportSection />
-      <BuildSection />
+      <ConsultationSection />
     </div>
   );
 };

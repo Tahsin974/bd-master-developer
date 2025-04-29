@@ -1,8 +1,8 @@
-import employee from "../../../assets/Accomplishment-Section/employee.svg";
-import client from "../../../assets/Accomplishment-Section/client.svg";
-import country from "../../../assets/Accomplishment-Section/country.svg";
-import technology from "../../../assets/Accomplishment-Section/technology.svg";
-import reputation from "../../../assets/Accomplishment-Section/reputation.svg";
+import employee from "../../../assets/Accomplishment-Section/employee.png";
+import client from "../../../assets/Accomplishment-Section/client.png";
+import country from "../../../assets/Accomplishment-Section/country.png";
+import technology from "../../../assets/Accomplishment-Section/technology.png";
+import reputation from "../../../assets/Accomplishment-Section/reputation.png";
 import "./AccomplishmentSection.css";
 
 const AccomplishmentSection = () => {
@@ -14,7 +14,7 @@ const AccomplishmentSection = () => {
        ----------------------------------------------
       */}
       <div className=" bg-[#F8FDFE] text-[#1D2345] my-24 ">
-        <div className=" max-w-[1280px] mx-auto xl:px-4 lg:px-4 md:px-4 sm:px-4 px-2">
+        <div className=" max-w-[1280px] mx-auto px-4">
           <div>
             {/*
        ----------------------------------------------

@@ -1,6 +1,6 @@
 // Import necessary icons and assets
 
-import { FaPlay } from "react-icons/fa6";
+import { FaArrowRightLong, FaPlay } from "react-icons/fa6";
 import img from "../../../assets/Hero-Section/bd-master-working-office.jpg";
 import "./HeroSection.css";
 import { useState } from "react";
@@ -20,25 +20,25 @@ const HeroSection = () => {
   const [Open, setOpen] = useState(false);
 
   return (
-    <div>
+    <>
       {/*
       ---------------------------------------------
       Hero Section with Gradient Background 
       --------------------------------------------
       */}
-      <div className="relative hero bg-gradient-to-t from-[#B1F2F4CC] to-white  min-h-screen pt-36 pb-28">
+      <section className="relative hero bg-gradient-to-t from-[#B1F2F4CC] to-white  hero-section pt-36 pb-28">
         {/*
         ----------------------------------------------
         Hero Content Container 
         -----------------------------------------------
         */}
-        <div className="grid lg:grid-cols-2 xl:grid-cols-2 max-w-[1280px] mx-auto gap-y-16 items-center  justify-items-center xl:px-4 lg:px-4 md:px-4 sm:px-4 px-2 gap-x-6">
+        <div className="grid lg:grid-cols-2 xl:grid-cols-2 max-w-[1280px] mx-auto gap-y-16 items-center  justify-items-center px-4 gap-x-6">
           {/* 
           ----------------------------------------------
           Left Column: Text & Buttons 
           ----------------------------------------------
           */}
-          <div className="space-y-2.5 text-[#1D2345]">
+          <div className="space-y-2.5 text-[#1D2345] lg:text-left xl:text-left text-justify">
             <h1 className="xl:text-5xl/normal lg:text-5xl/normal md:text-5xl/normal sm:text-5xl/normal text-4xl/normal    inter-bold">
               <span className="text-color bg-gradient-to-r from-[#00ffff] to-blue-800 ">
                 Empowering
@@ -57,8 +57,12 @@ const HeroSection = () => {
             ------------------------------------------------
             */}
             <div className="space-x-4 mb-14">
-              <ButtonBlue>Login</ButtonBlue>
-              <ButtonBlue>Registration</ButtonBlue>
+              <ButtonBlue>
+                Book a Meeting <FaArrowRightLong />
+              </ButtonBlue>
+              <button className="btn btn-green btn-sm md:btn-md lg:btn-lg xl:btn-lg text-[#1D2345]">
+                Sign In
+              </button>
             </div>
             {/*
             -------------------------------------------
@@ -118,8 +122,8 @@ const HeroSection = () => {
         -------------------------------------------------
         */}
         <YouTubeDialog setOpen={setOpen} Open={Open} />
-      </div>
-    </div>
+      </section>
+    </>
   );
 };
 

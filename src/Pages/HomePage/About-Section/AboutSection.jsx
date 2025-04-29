@@ -18,7 +18,7 @@ const AboutSection = () => {
          ----------------------------------------------
         */}
 
-        <div className="hero-content flex-col xl:flex-row-reverse lg:flex-row-reverse max-w-[1280px] mx-auto lg:gap-x-14 lg:gap-y-0 xl:gap-x-14 xl:gap-y-0 gap-y-20 xl:px-4 lg:px-4 md:px-4 sm:px-4 px-2">
+        <div className="hero-content flex-col xl:flex-row-reverse lg:flex-row-reverse max-w-[1280px] mx-auto lg:gap-x-14 lg:gap-y-0 xl:gap-x-14 xl:gap-y-0 gap-y-20 px-4">
           {/*
            ----------------------------------------------
           Left Column - Text Content 
@@ -26,14 +26,16 @@ const AboutSection = () => {
           */}
 
           <div className="lg:w-1/2 ">
-            <h5 className="text-[#00626F] text-lg ruluko-bold">Who We Are</h5>
+            <h5 className="text-[#00626F] xl:text-xl lg:text-xl md:text-xl sm:text-xl text-lg ruluko-bold">
+              Who We Are
+            </h5>
             {/* 
             ---------------------------------------------
             Main Heading 
             ----------------------------------------------
             */}
 
-            <h1 className="xl:text-4xl/snug lg:text-4xl/snug md:text-4xl/snug sm:text-4xl/snug text-3xl/snug    inter-bold ">
+            <h1 className="xl:text-4xl/snug lg:text-4xl/snug md:text-4xl/snug sm:text-4xl/snug text-2xl/snug    inter-bold lg:text-left xl:text-left text-justify">
               Code From{" "}
               <span className="text-color bg-gradient-to-r from-[#00ffff] to-blue-800">
                 Another Dimension to Automate
@@ -46,7 +48,7 @@ const AboutSection = () => {
             ------------------------------------------
             */}
 
-            <p className="py-6 text-base ruluko-regular">
+            <p className="py-6 text-base ruluko-regular lg:text-left xl:text-left text-justify">
               BD Master Developer works across multiple domains including
               software development, dynamic website development, customized
               software solutions, and modern UI/UX design.
@@ -57,25 +59,25 @@ const AboutSection = () => {
             <div className="space-y-2 text-base font-semibold">
               <div className="flex items-center gap-4  ">
                 <div className="p-2 custom-shadow rounded-full bg-[#EDEEF6] border-[#EDEEF6]">
-                  <FaCheck />
+                  <FaCheck className="text-[#00B2C9]" />
                 </div>
                 <p>Expert Developer</p>
               </div>
               <div className="flex items-center gap-4 ">
                 <div className="p-2 custom-shadow rounded-full bg-[#EDEEF6] border-[#EDEEF6]">
-                  <FaCheck />
+                  <FaCheck className="text-[#00B2C9]" />
                 </div>
                 <p>Fast Communication</p>
               </div>
               <div className="flex items-center gap-4 ">
                 <div className="p-2 custom-shadow rounded-full bg-[#EDEEF6]  border-[#EDEEF6]">
-                  <FaCheck />
+                  <FaCheck className="text-[#00B2C9]" />
                 </div>
                 <p>Unlimited Revision</p>
               </div>
               <div className="flex items-center gap-4 ">
                 <div className="p-2 custom-shadow rounded-full bg-[#EDEEF6] border-[#EDEEF6]">
-                  <FaCheck />
+                  <FaCheck className="text-[#00B2C9]" />
                 </div>
                 <p>24/7 Support</p>
               </div>
@@ -101,7 +103,7 @@ const AboutSection = () => {
           <figure className="lg:w-1/2  rounded-2xl">
             <img
               src={img}
-              className="rounded-3xl depth-rotate	 transition-all duration-700 ease-in-out
+              className="rounded-3xl depth-rotate	 ease-in-out hover:grayscale 
                "
             />
           </figure>

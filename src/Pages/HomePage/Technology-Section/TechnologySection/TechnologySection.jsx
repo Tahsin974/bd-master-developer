@@ -1,78 +1,86 @@
-import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
-import SectionTitle from "../../../../Components/Section-Title/SectionTitle";
-import WebsiteTabPanel from "../WebsiteTabPanel/WebsiteTabPanel";
-import "./TechnologySection.css";
-import UiUxTabPanel from "../UiUxTabPanel/UiUxTabPanel";
-import DigitalTabPanel from "../DigitalTabPanel/DigitalTabPanel";
-import VideoEditingTabPanel from "../VideoEditingTabPanel/VideoEditingTabPanel";
-import GraphicsTabPanel from "../GraphicsTabPanel/GraphicsTabPanel";
+import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react"; // Importing necessary components for tabs from Headless UI
+import SectionTitle from "../../../../Components/Section-Title/SectionTitle"; // Importing the SectionTitle component for displaying the section header
+import WebsiteTabPanel from "../WebsiteTabPanel/WebsiteTabPanel"; // Importing the WebsiteTabPanel component
+import "./TechnologySection.css"; // Importing custom CSS for styling
+import UiUxTabPanel from "../UiUxTabPanel/UiUxTabPanel"; // Importing the UI/UX Tab Panel component
+import DigitalTabPanel from "../DigitalTabPanel/DigitalTabPanel"; // Importing the Digital Marketing Tab Panel component
+import VideoEditingTabPanel from "../VideoEditingTabPanel/VideoEditingTabPanel"; // Importing the Video Editing Tab Panel component
+import GraphicsTabPanel from "../GraphicsTabPanel/GraphicsTabPanel"; // Importing the Graphics Design Tab Panel component
 
 const TechnologySection = () => {
-  // categories
+  // Categories for the different technology sectors (tabs)
   const categories = [
-    "website",
-    "UI/UX Design",
-    "Digital Marketing",
-    "SEO",
-    "Video Editing",
-    "Graphics Design",
+    "website", // Website Development
+    "UI/UX Design", // UI/UX Design
+    "Digital Marketing", // Digital Marketing
+    "SEO", // SEO (Search Engine Optimization)
+    "Video Editing", // Video Editing
+    "Graphics Design", // Graphics Design
   ];
 
   return (
     <div>
-      <div className="  bg-[#F8FDFE] min-h-screen my-24 py-10">
-        <div className="max-w-[1280px] mx-auto xl:px-4 lg:px-4 md:px-4 sm:px-4 px-2 space-y-16">
-          {/*
-          -----------------------------------------------
-          Section Title 
-          -----------------------------------------------
-          */}
+      <div className="bg-[#F8FDFE] min-h-screen my-24 py-10">
+        <div className="max-w-[1280px] mx-auto px-4 space-y-16">
+          {/* Section Title */}
           <SectionTitle
-            heading={"Powering Innovation with the Right Tech"}
+            heading={
+              <>
+                Powering{" "}
+                <span className="text-color bg-gradient-to-r from-[#00ffff] to-blue-800">
+                  Innovation
+                </span>{" "}
+                with the Right Tech
+              </>
+            }
             subheading={"Technology"}
           >
+            {/* Subheading text with a description of services */}
             <p className="ruluko-regular font-semibold text-gray-500">
-              Bd Master Developer works in multiple Sector including website
-              development,API development,Digital Marketing , UI/UX & SEO.Our
+              Bd Master Developer works in multiple sectors including website
+              development, API development, Digital Marketing, UI/UX & SEO. Our
               dream is to continue your journey with success{" "}
             </p>
           </SectionTitle>
-          {/*
-          -----------------------------------------------
-          Technologies
-          -----------------------------------------------
-          */}
+
+          {/* Technologies Tab Section */}
           <div>
             <div>
               <TabGroup>
-                <TabList className="lg:flex xl:flex grid md:grid-cols-3 sm:grid-cols-3  gap-4">
+                {/* Tab List - Buttons for each category */}
+                <TabList className="lg:flex xl:flex grid md:grid-cols-3 sm:grid-cols-3 gap-4">
                   {categories.map((category, index) => (
                     <Tab
-                      key={index}
+                      key={index} // Each Tab represents a category
                       className="rounded-full capitalize btn bg-[#F8FDFE] tab-custom-shadow py-1 px-3 text-sm/6 font-semibold text-[#1D2345] focus:outline-none data-[selected]:bg-[#1D2345] data-[hover]:bg-[#1D2345]   data-[selected]:text-[#F8FDFE] data-[hover]:text-[#F8FDFE] data-[focus]:outline-1 data-[focus]:outline-[#F8FDFE]"
                     >
-                      {category}
+                      {category}{" "}
+                      {/* Display the category name inside the tab */}
                     </Tab>
                   ))}
                 </TabList>
+
+                {/* Tab Panels - Displays content based on the selected tab */}
                 <TabPanels>
                   <TabPanel>
-                    <WebsiteTabPanel />
+                    <WebsiteTabPanel />{" "}
+                    {/* Component for Website Development */}
                   </TabPanel>
                   <TabPanel>
-                    <UiUxTabPanel />
+                    <UiUxTabPanel /> {/* Component for UI/UX Design */}
                   </TabPanel>
                   <TabPanel>
-                    <DigitalTabPanel />
+                    <DigitalTabPanel /> {/* Component for Digital Marketing */}
                   </TabPanel>
                   <TabPanel>
-                    <DigitalTabPanel />
+                    <DigitalTabPanel />{" "}
+                    {/* Duplicate TabPanel for SEO (replace this with SEO-specific panel if needed) */}
                   </TabPanel>
                   <TabPanel>
-                    <VideoEditingTabPanel />
+                    <VideoEditingTabPanel /> {/* Component for Video Editing */}
                   </TabPanel>
                   <TabPanel>
-                    <GraphicsTabPanel />
+                    <GraphicsTabPanel /> {/* Component for Graphics Design */}
                   </TabPanel>
                 </TabPanels>
               </TabGroup>

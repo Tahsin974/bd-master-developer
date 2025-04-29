@@ -4,12 +4,10 @@ import "./Footer.css";
 import { MdPhoneAndroid } from "react-icons/md";
 import { SlEnvolope } from "react-icons/sl";
 import { IoLocationSharp } from "react-icons/io5";
-import {
-  FaFacebookSquare,
-  FaInstagramSquare,
-  FaRegCheckCircle,
-} from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa6";
+import facebook from "../../../assets/Footer/facebook.png";
+import linkedin from "../../../assets/Footer/linkedin.png";
+import instagram from "../../../assets/Footer/instagram.png";
+import { FaRegCheckCircle } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="bg-[#000F11] text-[#EBF1F5] ruluko-regular">
@@ -127,15 +125,15 @@ const Footer = () => {
               Master Developer
             </p>
           </div>
-          <div className="flex justify-between w-1/3 mx-auto ">
+          <div className="flex gap-4 w-[max-context] xl:ms-auto lg:ms-auto mx-auto ">
             <a>
-              <FaFacebookSquare className="text-[#F8FDFE]" size={20} />
+              <img src={facebook} alt="facebook logo" className="h-6 w-6" />
             </a>
             <a>
-              <FaLinkedin className="text-[#F8FDFE]" size={20} />
+              <img src={linkedin} alt="facebook logo" className="h-6 w-6" />
             </a>
             <a>
-              <FaInstagramSquare className="text-9xl[#F8FDFE]" size={20} />
+              <img src={instagram} alt="facebook logo" className="h-6 w-6" />
             </a>
           </div>
         </footer>

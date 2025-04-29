@@ -1,5 +1,5 @@
 import PageTitle from "../../../Components/PageTitle/PageTitle";
-import BuildSection from "../../Shared/Build-Section/BuildSection";
+import ConsultationSection from "../../Shared/Consultation-Section/ConsultationSection";
 import OurSupportSection from "../../Shared/OurSupport-Section/OurSupportSection";
 import TestimonialSection from "../../Shared/Testimonial-Section/TestimonialSection";
 import Projects from "../Projects/Projects";
@@ -11,7 +11,7 @@ const ProjectPageLayout = () => {
       <Projects />
       <TestimonialSection />
       <OurSupportSection />
-      <BuildSection />
+      <ConsultationSection />
     </div>
   );
 };

@@ -3,7 +3,22 @@
 .move-up {
   animation: moving-up 2s infinite alternate ease-in-out;
 }
+.hero-section {
+  height: min-content;
+}
 
+.btn-green {
+  border-radius: 90px;
+  border-color: #cef0f5;
+  background: linear-gradient(
+      0deg,
+      rgba(96, 96, 96, 0.03) 0%,
+      rgba(96, 96, 96, 0.03) 100%
+    ),
+    #cef0f5;
+  box-shadow: -4.505px -4.505px 6.006px 0px rgba(255, 255, 255, 0.6),
+    6.006px 6.006px 6.006px 0px rgba(0, 0, 0, 0.14);
+}
 @keyframes moving-up {
   0% {
     transform: translateY(0);

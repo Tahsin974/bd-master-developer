@@ -43,20 +43,35 @@ const Navbar = ({ children }) => {
         <Link
           to="/projects"
           className={` text-[#1D2345] text-lg bg-transparent  ${
-            selectedLink === "/projects" && "xl:selected-link lg:selected-link"
+            selectedLink === "/projects" && "selected-link"
           }`}
         >
           Projects
         </Link>
       </li>
       <li>
-        <Link>About Us</Link>
+        <Link
+          to="/about"
+          className={` text-[#1D2345] text-lg bg-transparent  ${
+            selectedLink === "/about" && "selected-link"
+          }`}
+        >
+          About Us
+        </Link>
       </li>
       <li>
-        <Link>Contact Us</Link>
+        <Link
+          to="/contact"
+          className={` text-[#1D2345] text-lg bg-transparent  ${
+            selectedLink === "/contact" && "selected-link"
+          }`}
+        >
+          Contact Us
+        </Link>
       </li>
     </>
   );
+  console.log(selectedLink === "/about" && "xl:selected-link lg:selected-link");
   useEffect(() => {
     // Function to check if the window has been scrolled more than 20px
 
@@ -114,8 +129,8 @@ const Navbar = ({ children }) => {
               {/* Navbar end section */}
               <div className="navbar-end">
                 {/* Appointment Button */}
-                <button className="btn btn-sm md:btn-md lg:btn-lg xl:btn-lg bg-blue-800 text-white border-blue-800 shadow-none hidden lg:flex xl:flex rounded-3xl">
-                  Appointment
+                <button className="btn btn-sm md:btn-md lg:btn-lg xl:btn-lg bg-[#4654A4] text-white border-[#4654A4] shadow-none hidden lg:flex xl:flex rounded-3xl">
+                  Log In
                 </button>
 
                 {/* Hamburger menu button for small screens */}
@@ -155,8 +170,8 @@ const Navbar = ({ children }) => {
             {/* Renders dynamic nav options from the 'navOptions' variable */}
             {navOptions}
             {/* appointment button */}
-            <button className="btn btn-sm md:btn-md lg:btn-lg xl:btn-lg bg-blue-800 text-white border-blue-800 shadow-none rounded-3xl mt-2">
-              Appointment
+            <button className="btn btn-sm md:btn-md lg:btn-lg xl:btn-lg bg-[#4654A4] text-white border-[#4654A4] shadow-none rounded-3xl mt-2">
+              Log In
             </button>
           </ul>
         </div>

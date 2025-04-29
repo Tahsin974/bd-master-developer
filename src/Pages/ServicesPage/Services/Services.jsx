@@ -1,12 +1,12 @@
 import ButtonWhite from "../../../Components/ButtonWhite/ButtonWhite";
 import IconShowcase from "../../../Components/IconShowcase/IconShowcase";
 import SectionTitle from "../../../Components/Section-Title/SectionTitle";
-import UiUxIcon from "../../../assets/Services-Section/ui-ux.svg";
-import WebIcon from "../../../assets/Services-Section/web-development.svg";
-import MarketingIcon from "../../../assets/Services-Section/digital-marketing.svg";
-import SEOIcon from "../../../assets/Services-Section/seo.svg";
-import VideoEditingIcon from "../../../assets/Services-Section/video-editing.svg";
-import GraphicDesignIcon from "../../../assets/Services-Section/graphic-design.svg";
+import UiUxIcon from "../../../assets/Services-Section/ui-ux.png";
+import WebIcon from "../../../assets/Services-Section/web-development.png";
+import MarketingIcon from "../../../assets/Services-Section/digital-marketing.png";
+import SEOIcon from "../../../assets/Services-Section/seo.png";
+import VideoEditingIcon from "../../../assets/Services-Section/video-editing.png";
+import GraphicDesignIcon from "../../../assets/Services-Section/graphic-design.png";
 
 import "./Services.css";
 import UiUx from "../../../assets/Services-Page/UI-UX/uiux-design.png";
@@ -27,7 +27,7 @@ import { FaArrowRight } from "react-icons/fa6";
 const Services = () => {
   return (
     <div className="bg-[#F8FDFE] min-h-screen my-24 py-20">
-      <div className="max-w-[1280px] mx-auto xl:px-4 lg:px-4 md:px-4 sm:px-4 px-2 space-y-16">
+      <div className="max-w-[1280px] mx-auto px-4 space-y-16">
         {/*
           -----------------------------------------------
           Section Title 
@@ -40,57 +40,6 @@ const Services = () => {
         --------------------------------------------------
         */}
         <div className="grid xl:grid-cols-1 lg:grid-cols-1  md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-4 px-2 space-y-12 ">
-          {/*
-        --------------------------------------------------
-                            Ui/Ux Service Card
-        --------------------------------------------------
-        */}
-          <div className="card  h-full service-card lg:card-side gap-5 rounded-3xl p-4">
-            <figure className="xl:w-1/2 lg:w-1/2">
-              <img src={UiUx} alt="Album" />
-            </figure>
-            <div className="card-body xl:w-1/2 lg:w-1/2">
-              <div className="flex flex-col xl:flex-row lg:flex-row  xl:items-center lg:items-center items-start gap-4">
-                {/* Small Icon */}
-                <IconShowcase icon={UiUxIcon} />
-                <div>
-                  <p className="text-xl font-semibold ruluko-bold text-[#1D2345]">
-                    UI-UX Design
-                  </p>
-                  <p className="text-gray-400 ruluko-regular text-lg">
-                    When it comes to UI/UX design, we create experiences that
-                    are simple to navigate.
-                  </p>
-                </div>
-              </div>
-              <div className="ps-2.5">
-                <div className="font-semibold mt-3.5 flex gap-x-2 items-center">
-                  <FaArrowRight size={20} />
-                  <p>User Research</p>
-                </div>
-                <div className="font-semibold mt-3.5 flex gap-x-2 items-center">
-                  <FaArrowRight size={20} />
-                  <p>Wireframe & Prototyping</p>
-                </div>
-                <div className="font-semibold mt-3.5 flex gap-x-2 items-center">
-                  <FaArrowRight size={20} />
-                  <p>Visual Ul Design</p>
-                </div>
-                <div className="font-semibold mt-3.5 flex gap-x-2 items-center">
-                  <FaArrowRight size={20} />
-                  <p>Usability Testing</p>
-                </div>
-              </div>
-              <div>
-                <img src={uiTools} alt="" />
-              </div>
-              <div className="card-actions justify-start mt-auto">
-                <ButtonWhite>
-                  <span className="btn-link">View Projects</span>
-                </ButtonWhite>
-              </div>
-            </div>
-          </div>
           {/*
         --------------------------------------------------
                     Web-Development Service Card
@@ -142,6 +91,58 @@ const Services = () => {
               </div>
             </div>
           </div>
+          {/*
+        --------------------------------------------------
+                            Ui/Ux Service Card
+        --------------------------------------------------
+        */}
+          <div className="card  h-full service-card lg:card-side gap-5 rounded-3xl p-4">
+            <figure className="xl:w-1/2 lg:w-1/2">
+              <img src={UiUx} alt="Album" />
+            </figure>
+            <div className="card-body xl:w-1/2 lg:w-1/2">
+              <div className="flex flex-col xl:flex-row lg:flex-row  xl:items-center lg:items-center items-start gap-4">
+                {/* Small Icon */}
+                <IconShowcase icon={UiUxIcon} />
+                <div>
+                  <p className="text-xl font-semibold ruluko-bold text-[#1D2345]">
+                    UI-UX Design
+                  </p>
+                  <p className="text-gray-400 ruluko-regular text-lg">
+                    When it comes to UI/UX design, we create experiences that
+                    are simple to navigate.
+                  </p>
+                </div>
+              </div>
+              <div className="ps-2.5">
+                <div className="font-semibold mt-3.5 flex gap-x-2 items-center">
+                  <FaArrowRight size={20} />
+                  <p>User Research</p>
+                </div>
+                <div className="font-semibold mt-3.5 flex gap-x-2 items-center">
+                  <FaArrowRight size={20} />
+                  <p>Wireframe & Prototyping</p>
+                </div>
+                <div className="font-semibold mt-3.5 flex gap-x-2 items-center">
+                  <FaArrowRight size={20} />
+                  <p>Visual Ul Design</p>
+                </div>
+                <div className="font-semibold mt-3.5 flex gap-x-2 items-center">
+                  <FaArrowRight size={20} />
+                  <p>Usability Testing</p>
+                </div>
+              </div>
+              <div>
+                <img src={uiTools} alt="" />
+              </div>
+              <div className="card-actions justify-start mt-auto">
+                <ButtonWhite>
+                  <span className="btn-link">View Projects</span>
+                </ButtonWhite>
+              </div>
+            </div>
+          </div>
+
           {/*
         --------------------------------------------------
                     Digital Marketing Service Card
@@ -297,7 +298,7 @@ const Services = () => {
           </div>
           {/*
         --------------------------------------------------
-                    Video Editing Service Card
+                    Graphic Design Service Card
         --------------------------------------------------
         */}
           <div className="card service-card lg:card-side gap-5 rounded-3xl p-4 h-full">
