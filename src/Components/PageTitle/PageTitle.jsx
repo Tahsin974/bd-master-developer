@@ -10,14 +10,14 @@ const PageTitle = ({ pageName }) => {
               <div className="breadcrumbs text-sm max-w-[184px] border-4 border-[#F8FDFE] rounded-[45px] bg-[#838CC2] shadow-[0px_1px_7px_0px_rgba(0,0,0,0.12)] py-2 px-5 mx-auto text-[#f5f5f5] ruluko-regular capitalize flex justify-center">
                 <ul>
                   <li>
-                    <Link to="/" className="text-gray-300">
+                    <Link to="/" className="text-gray-200">
                       Home
                     </Link>
                   </li>
                   <li>
                     <Link
                       to={`/${pageName}`}
-                      className="text-gray-300 capitalize"
+                      className="text-gray-200 capitalize"
                     >
                       {pageName}
                     </Link>
