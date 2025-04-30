@@ -18,7 +18,7 @@ const AboutSection = () => {
          ----------------------------------------------
         */}
 
-        <div className="hero-content flex-col xl:flex-row-reverse lg:flex-row-reverse max-w-[1280px] mx-auto lg:gap-x-14 lg:gap-y-0 xl:gap-x-14 xl:gap-y-0 gap-y-20 px-4">
+        <div className="hero-content flex-col xl:flex-row-reverse lg:flex-row-reverse max-w-[1280px] mx-auto lg:gap-x-14 lg:gap-y-0 xl:gap-x-14 xl:gap-y-0 gap-y-20 xl:px-12 lg:px-12 md:px-12 px-6">
           {/*
            ----------------------------------------------
           Left Column - Text Content 
@@ -35,7 +35,7 @@ const AboutSection = () => {
             ----------------------------------------------
             */}
 
-            <h1 className="xl:text-4xl/snug lg:text-4xl/snug md:text-4xl/snug sm:text-4xl/snug text-2xl/snug    inter-bold lg:text-left xl:text-left text-justify">
+            <h1 className="xl:text-4xl/snug lg:text-3xl/snug md:text-3xl/snug sm:text-3xl/snug text-2xl/snug    inter-bold lg:text-left xl:text-left ">
               Code From{" "}
               <span className="text-color bg-gradient-to-r from-[#00ffff] to-blue-800">
                 Another Dimension to Automate

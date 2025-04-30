@@ -76,7 +76,7 @@ const Navbar = ({ children }) => {
     // Function to check if the window has been scrolled more than 20px
 
     const handleScroll = () => {
-      setScrolling(window.scrollY > 20);
+      setScrolling(window.scrollY > 15);
     };
     // Add scroll event listener when the component mounts
 
@@ -101,7 +101,7 @@ const Navbar = ({ children }) => {
               scrolling ? "bg-white" : "bg-transparent"
             } fixed top-0 z-50 w-full shadow-sm transition-all duration-300`}
           >
-            <div className="max-w-[1280px] mx-auto w-full  py-4 flex items-center justify-between px-4">
+            <div className="max-w-[1280px] mx-auto w-full  py-4 flex items-center justify-between xl:px-12 lg:px-12 md:px-12 px-6">
               {/* 
             Navbar start section with logo image
             Sets logo height to 40px and maintains aspect ratio
@@ -130,7 +130,7 @@ const Navbar = ({ children }) => {
               <div className="navbar-end">
                 {/* Appointment Button */}
                 <button className="btn btn-sm md:btn-md lg:btn-lg xl:btn-lg bg-[#4654A4] text-white border-[#4654A4] shadow-none hidden lg:flex xl:flex rounded-3xl">
-                  Log In
+                  Sign In
                 </button>
 
                 {/* Hamburger menu button for small screens */}
@@ -171,7 +171,7 @@ const Navbar = ({ children }) => {
             {navOptions}
             {/* appointment button */}
             <button className="btn btn-sm md:btn-md lg:btn-lg xl:btn-lg bg-[#4654A4] text-white border-[#4654A4] shadow-none rounded-3xl mt-2">
-              Log In
+              Sign In
             </button>
           </ul>
         </div>

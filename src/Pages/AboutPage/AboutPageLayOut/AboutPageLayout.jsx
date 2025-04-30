@@ -14,12 +14,12 @@ const AboutPageLayout = () => {
     <div>
       <PageTitle pageName={"about"} />
       <AboutSection />
-      <Mission />
-      <Vision />
-      <TeamMemberSection />
-      <TestimonialSection />
       <ServiceSection />
       <TechnologySection />
+      <TeamMemberSection />
+      <Mission />
+      <Vision />
+      <TestimonialSection />
       <ConsultationSection />
     </div>
   );

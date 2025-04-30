@@ -32,20 +32,20 @@ const HeroSection = () => {
         Hero Content Container 
         -----------------------------------------------
         */}
-        <div className="grid lg:grid-cols-2 xl:grid-cols-2 max-w-[1280px] mx-auto gap-y-16 items-center  justify-items-center px-4 gap-x-6">
+        <div className="grid lg:grid-cols-2 xl:grid-cols-2 max-w-[1280px] mx-auto gap-y-16 items-center  justify-items-center xl:px-12 lg:px-12 md:px-12 px-6 gap-x-6">
           {/* 
           ----------------------------------------------
           Left Column: Text & Buttons 
           ----------------------------------------------
           */}
-          <div className="space-y-2.5 text-[#1D2345] lg:text-left xl:text-left text-justify">
-            <h1 className="xl:text-5xl/normal lg:text-5xl/normal md:text-5xl/normal sm:text-5xl/normal text-4xl/normal    inter-bold">
+          <div className="space-y-2.5 text-[#1D2345] lg:text-left xl:text-left ">
+            <h1 className="xl:text-5xl/normal lg:text-4xl/normal md:text-5xl/normal sm:text-5xl/normal text-4xl/normal    inter-bold">
               <span className="text-color bg-gradient-to-r from-[#00ffff] to-blue-800 ">
                 Empowering
               </span>{" "}
               Innovation Through <span className="text-blue-800">Code</span>
             </h1>
-            <p className="py-6 text-lg ruluko-regular">
+            <p className="py-6 text-lg ruluko-regular text-justify">
               At BD Master Developer, we specialize in turning bold ideas into
               reliable software. From startups to enterprises, our expert team
               delivers web, mobile, and cloud-based applications with precision
@@ -61,7 +61,7 @@ const HeroSection = () => {
                 Book a Meeting <FaArrowRightLong />
               </ButtonBlue>
               <button className="btn btn-green btn-sm md:btn-md lg:btn-lg xl:btn-lg text-[#1D2345]">
-                Sign In
+                Sign Up
               </button>
             </div>
             {/*

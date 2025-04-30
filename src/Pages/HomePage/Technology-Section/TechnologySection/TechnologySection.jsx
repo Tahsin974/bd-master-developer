@@ -12,16 +12,15 @@ const TechnologySection = () => {
   const categories = [
     "website", // Website Development
     "UI/UX Design", // UI/UX Design
-    "Digital Marketing", // Digital Marketing
-    "SEO", // SEO (Search Engine Optimization)
-    "Video Editing", // Video Editing
     "Graphics Design", // Graphics Design
+    "Digital Marketing", // Digital Marketing
+    "Video Editing", // Video Editing
   ];
 
   return (
     <div>
       <div className="bg-[#F8FDFE] min-h-screen my-24 py-10">
-        <div className="max-w-[1280px] mx-auto px-4 space-y-16">
+        <div className="max-w-[1280px] mx-auto xl:px-12 lg:px-12 md:px-12 px-6 space-y-16">
           {/* Section Title */}
           <SectionTitle
             heading={
@@ -70,17 +69,14 @@ const TechnologySection = () => {
                     <UiUxTabPanel /> {/* Component for UI/UX Design */}
                   </TabPanel>
                   <TabPanel>
+                    <GraphicsTabPanel /> {/* Component for Graphics Design */}
+                  </TabPanel>
+                  <TabPanel>
                     <DigitalTabPanel /> {/* Component for Digital Marketing */}
                   </TabPanel>
-                  <TabPanel>
-                    <DigitalTabPanel />{" "}
-                    {/* Duplicate TabPanel for SEO (replace this with SEO-specific panel if needed) */}
-                  </TabPanel>
+
                   <TabPanel>
                     <VideoEditingTabPanel /> {/* Component for Video Editing */}
-                  </TabPanel>
-                  <TabPanel>
-                    <GraphicsTabPanel /> {/* Component for Graphics Design */}
                   </TabPanel>
                 </TabPanels>
               </TabGroup>

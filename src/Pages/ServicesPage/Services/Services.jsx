@@ -27,7 +27,7 @@ import { FaArrowRight } from "react-icons/fa6";
 const Services = () => {
   return (
     <div className="bg-[#F8FDFE] min-h-screen my-24 py-20">
-      <div className="max-w-[1280px] mx-auto px-4 space-y-16">
+      <div className="max-w-[1280px] mx-auto xl:px-12 lg:px-12 md:px-12 px-6 space-y-16">
         {/*
           -----------------------------------------------
           Section Title 
@@ -134,6 +134,57 @@ const Services = () => {
               </div>
               <div>
                 <img src={uiTools} alt="" />
+              </div>
+              <div className="card-actions justify-start mt-auto">
+                <ButtonWhite>
+                  <span className="btn-link">View Projects</span>
+                </ButtonWhite>
+              </div>
+            </div>
+          </div>
+          {/*
+        --------------------------------------------------
+                    Graphic Design Service Card
+        --------------------------------------------------
+        */}
+          <div className="card service-card lg:card-side gap-5 rounded-3xl p-4 h-full">
+            <figure className="xl:w-1/2 lg:w-1/2">
+              <img src={GraphicDesign} alt="Album" />
+            </figure>
+            <div className="card-body xl:w-1/2 lg:w-1/2">
+              <div className="flex flex-col xl:flex-row lg:flex-row  xl:items-center lg:items-center items-start gap-4">
+                {/* Small Icon */}
+                <IconShowcase icon={GraphicDesignIcon} />
+                <div>
+                  <p className="text-xl font-semibold ruluko-bold text-[#1D2345]">
+                    Graphics Design
+                  </p>
+                  <p className="text-gray-400 ruluko-regular text-lg">
+                    Boost your online visibility and rank higher with expert SEO
+                    strategies.
+                  </p>
+                </div>
+              </div>
+              <div className="ps-2.5">
+                <div className="font-semibold mt-3.5 flex gap-x-2 items-center">
+                  <FaArrowRight size={20} />
+                  <p>Footage Review</p>
+                </div>
+                <div className="font-semibold mt-3.5 flex gap-x-2 items-center">
+                  <FaArrowRight size={20} />
+                  <p>Rough Cut</p>
+                </div>
+                <div className="font-semibold mt-3.5 flex gap-x-2 items-center">
+                  <FaArrowRight size={20} />
+                  <p>Fine Editing</p>
+                </div>
+                <div className="font-semibold mt-3.5 flex gap-x-2 items-center">
+                  <FaArrowRight size={20} />
+                  <p>Color Grading & Sound Design</p>
+                </div>
+              </div>
+              <div>
+                <img src={graphicTools} />
               </div>
               <div className="card-actions justify-start mt-auto">
                 <ButtonWhite>
@@ -288,57 +339,6 @@ const Services = () => {
               </div>
               <div>
                 <img src={editingTools} />
-              </div>
-              <div className="card-actions justify-start mt-auto">
-                <ButtonWhite>
-                  <span className="btn-link">View Projects</span>
-                </ButtonWhite>
-              </div>
-            </div>
-          </div>
-          {/*
-        --------------------------------------------------
-                    Graphic Design Service Card
-        --------------------------------------------------
-        */}
-          <div className="card service-card lg:card-side gap-5 rounded-3xl p-4 h-full">
-            <figure className="xl:w-1/2 lg:w-1/2">
-              <img src={GraphicDesign} alt="Album" />
-            </figure>
-            <div className="card-body xl:w-1/2 lg:w-1/2">
-              <div className="flex flex-col xl:flex-row lg:flex-row  xl:items-center lg:items-center items-start gap-4">
-                {/* Small Icon */}
-                <IconShowcase icon={GraphicDesignIcon} />
-                <div>
-                  <p className="text-xl font-semibold ruluko-bold text-[#1D2345]">
-                    Graphics Design
-                  </p>
-                  <p className="text-gray-400 ruluko-regular text-lg">
-                    Boost your online visibility and rank higher with expert SEO
-                    strategies.
-                  </p>
-                </div>
-              </div>
-              <div className="ps-2.5">
-                <div className="font-semibold mt-3.5 flex gap-x-2 items-center">
-                  <FaArrowRight size={20} />
-                  <p>Footage Review</p>
-                </div>
-                <div className="font-semibold mt-3.5 flex gap-x-2 items-center">
-                  <FaArrowRight size={20} />
-                  <p>Rough Cut</p>
-                </div>
-                <div className="font-semibold mt-3.5 flex gap-x-2 items-center">
-                  <FaArrowRight size={20} />
-                  <p>Fine Editing</p>
-                </div>
-                <div className="font-semibold mt-3.5 flex gap-x-2 items-center">
-                  <FaArrowRight size={20} />
-                  <p>Color Grading & Sound Design</p>
-                </div>
-              </div>
-              <div>
-                <img src={graphicTools} />
               </div>
               <div className="card-actions justify-start mt-auto">
                 <ButtonWhite>

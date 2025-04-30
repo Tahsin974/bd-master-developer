@@ -33,7 +33,7 @@ const MySlider = ({
     }
   }, []);
   return (
-    <div className="relative">
+    <div className="relative ">
       <Swiper
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         pagination={isPagination}
@@ -55,10 +55,10 @@ const MySlider = ({
           },
 
           880: {
-            slidesPerView: laptopView,
+            slidesPerView: tabletView,
             spaceBetween: 30,
           },
-          1024: {
+          1006: {
             slidesPerView: laptopView,
             spaceBetween: 30,
           },

@@ -14,7 +14,7 @@ const AccomplishmentSection = () => {
        ----------------------------------------------
       */}
       <div className=" bg-[#F8FDFE] text-[#1D2345] my-24 ">
-        <div className=" max-w-[1280px] mx-auto px-4">
+        <div className=" max-w-[1280px] mx-auto xl:px-12 lg:px-12 md:px-12 px-6">
           <div>
             {/*
        ----------------------------------------------
@@ -22,13 +22,13 @@ const AccomplishmentSection = () => {
        ----------------------------------------------
       */}
 
-            <div className="grid xl:grid-cols-5 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 gap-6 justify-items-center-safe ">
+            <div className="accomplish-cards ">
               {/*
               ----------------------------------------------
               Employees  card accomplish-card 
               ----------------------------------------------
               */}
-              <div className=" card accomplish-card   w-[184px] h-[240px]    transition duration-300 ease-in-out hover:-translate-y-4  my-auto   px-3 py-7 ">
+              <div className=" card accomplish-card        transition duration-300 ease-in-out hover:-translate-y-4  my-auto   px-3 py-7 ">
                 <div className="items-center  text-center space-y-2">
                   <div className="w-16 h-16 mx-auto flex items-center justify-center custom-shadow-inner mb-7">
                     <img src={employee} alt="" className="w-10 h-10" />
@@ -45,7 +45,7 @@ const AccomplishmentSection = () => {
               Clients  card accomplish-card 
               ----------------------------------------------
               */}
-              <div className=" card accomplish-card   w-[184px] h-[240px]   transition duration-300 ease-in-out hover:-translate-y-4  my-auto   px-3 py-7 ">
+              <div className=" card accomplish-card       transition duration-300 ease-in-out hover:-translate-y-4  my-auto   px-3 py-7 ">
                 <div className="items-center  text-center space-y-2">
                   <div className="w-16 h-16 mx-auto flex items-center justify-center bg-[#f9fafb] shadow-gray-400 rounded-xl  custom-shadow-inner mb-7">
                     <img src={client} alt="" className="w-10 h-10" />
@@ -61,7 +61,7 @@ const AccomplishmentSection = () => {
               Countries  card accomplish-card 
               ----------------------------------------------
               */}
-              <div className=" card accomplish-card   w-[184px] h-[240px]   transition duration-300 ease-in-out hover:-translate-y-4  my-auto   px-3 py-7 ">
+              <div className=" card accomplish-card       transition duration-300 ease-in-out hover:-translate-y-4  my-auto   px-3 py-7 ">
                 <div className="items-center  text-center space-y-2">
                   <div className="w-16 h-16 mx-auto flex items-center justify-center bg-[#f9fafb] shadow-gray-400 rounded-xl custom-shadow-inner mb-7">
                     <img src={country} alt="" className="w-10 h-10" />
@@ -77,7 +77,7 @@ const AccomplishmentSection = () => {
               Technologies  card accomplish-card 
               ----------------------------------------------
               */}
-              <div className=" card accomplish-card   w-[184px] h-[240px]   transition duration-300 ease-in-out hover:-translate-y-4  my-auto   px-3 py-7 ">
+              <div className=" card accomplish-card       transition duration-300 ease-in-out hover:-translate-y-4  my-auto   px-3 py-7 ">
                 <div className="items-center  text-center space-y-2">
                   <div className="w-16 h-16 mx-auto flex items-center justify-center bg-[#f9fafb] shadow-gray-400 rounded-xl custom-shadow-inner mb-7">
                     <img src={technology} alt="" className="w-10 h-10" />
@@ -93,7 +93,7 @@ const AccomplishmentSection = () => {
               Client Satisfaction  card accomplish-card 
               ----------------------------------------------
               */}
-              <div className=" card accomplish-card   w-[184px] h-[240px]   transition duration-300 ease-in-out hover:-translate-y-4  my-auto   px-3 py-7 ">
+              <div className=" card accomplish-card       transition duration-300 ease-in-out hover:-translate-y-4  my-auto   px-3 py-7 ">
                 <div className="items-center  text-center space-y-2">
                   <div className="w-16 h-16 mx-auto flex items-center justify-center bg-[#f9fafb] shadow-gray-400 rounded-xl custom-shadow-inner mb-7">
                     <img src={reputation} alt="" className="w-10 h-10" />

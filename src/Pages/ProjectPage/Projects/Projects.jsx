@@ -10,7 +10,7 @@ const Projects = () => {
   return (
     // Wrapper div with background color and padding
     <div className="bg-[#F8FDFE] min-h-screen my-24 py-20">
-      <div className="max-w-[1280px] mx-auto px-4 space-y-16">
+      <div className="max-w-[1280px] mx-auto xl:px-12 lg:px-12 md:px-12 px-6 space-y-16">
         {/* Section Title */}
         <SectionTitle
           heading={`Explore Our Ux -Ui  all projects`} // The main heading

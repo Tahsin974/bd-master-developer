@@ -81,8 +81,8 @@ const TeamMemberSection = () => {
   console.log(teamMembers); // Logging team members data (for debugging)
 
   return (
-    <div className="bg-[#F8FDFE] min-h-screen my-24 py-10">
-      <div className="max-w-[1280px] mx-auto px-4 space-y-5">
+    <div className="bg-[#F8FDFE] h-[min-content] my-24 py-10 ">
+      <div className="max-w-[1280px] mx-auto xl:px-12 lg:px-12 md:px-12 px-6 space-y-5">
         {/* Section Title with a gradient color for "Dedicated" */}
         <SectionTitle
           heading={
