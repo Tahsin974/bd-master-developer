@@ -1,10 +1,10 @@
 import { RxHamburgerMenu } from "react-icons/rx";
 import logo from "../../../assets/Logo/logo.png";
-import { Link } from "react-router";
 import { useEffect, useRef, useState } from "react";
 import { IoCloseOutline } from "react-icons/io5";
 import "./Navbar.css";
 import useSelectedLinkContext from "../../../Context/useSelectedLinkContext";
+import { HashLink } from "react-router-hash-link";
 const Navbar = ({ children }) => {
   const { selectedLink } = useSelectedLinkContext();
   const [scrolling, setScrolling] = useState(false);
@@ -19,59 +19,60 @@ const Navbar = ({ children }) => {
   const navOptions = (
     <>
       <li>
-        <Link
-          to="/home"
+        <HashLink
+          to="/home#"
           className={` text-[#1D2345] text-lg bg-transparent  ${
             (selectedLink === "/home" && "selected-link") ||
             (selectedLink === "/" && "selected-link")
           }`}
         >
           Home
-        </Link>
+        </HashLink>
       </li>
       <li>
-        <Link
-          to="/services"
-          className={` text-[#1D2345] text-lg bg-transparent  ${
-            selectedLink === "/services" && "selected-link"
-          }`}
-        >
-          Services
-        </Link>
-      </li>
-      <li>
-        <Link
-          to="/projects"
-          className={` text-[#1D2345] text-lg bg-transparent  ${
-            selectedLink === "/projects" && "selected-link"
-          }`}
-        >
-          Projects
-        </Link>
-      </li>
-      <li>
-        <Link
-          to="/about"
+        <HashLink
+          to="/about#"
           className={` text-[#1D2345] text-lg bg-transparent  ${
             selectedLink === "/about" && "selected-link"
           }`}
         >
           About Us
-        </Link>
+        </HashLink>
       </li>
       <li>
-        <Link
-          to="/contact"
+        <HashLink
+          to="/services#"
+          className={` text-[#1D2345] text-lg bg-transparent  ${
+            selectedLink === "/services" && "selected-link"
+          }`}
+        >
+          Services
+        </HashLink>
+      </li>
+      <li>
+        <HashLink
+          to="/projects#"
+          className={` text-[#1D2345] text-lg bg-transparent  ${
+            selectedLink === "/projects" && "selected-link"
+          }`}
+        >
+          Projects
+        </HashLink>
+      </li>
+
+      <li>
+        <HashLink
+          to="/contact#"
           className={` text-[#1D2345] text-lg bg-transparent  ${
             selectedLink === "/contact" && "selected-link"
           }`}
         >
           Contact Us
-        </Link>
+        </HashLink>
       </li>
     </>
   );
-  console.log(selectedLink === "/about" && "xl:selected-link lg:selected-link");
+
   useEffect(() => {
     // Function to check if the window has been scrolled more than 20px
 
@@ -108,13 +109,13 @@ const Navbar = ({ children }) => {
 
             */}
               <div className="navbar-start ">
-                <Link className="/">
+                <HashLink to="/#">
                   <img
                     src={logo}
                     alt="BD Master Developer Logo"
                     className="h-[40px] w-auto "
                   />
-                </Link>
+                </HashLink>
               </div>
               {/* Navbar center section */}
               <div className="navbar-center">

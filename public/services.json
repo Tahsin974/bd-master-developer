@@ -1,0 +1,80 @@
+[
+  {
+    "icon": "https://i.postimg.cc/TP5BMyN6/web-development.png",
+    "serviceName": "Website Development",
+    "description": "We create visually appealing and user-friendly websites that offer flawless navigation, optimized performance.",
+    "services": [
+      "Design & Prototyping",
+      "Development",
+      "Testing & QA",
+      "Launch & Support"
+    ],
+    "tools": "https://i.postimg.cc/Qd3FW556/webtools.png",
+    "thumbnail": "https://i.postimg.cc/X7wJ3Jh9/web-devepoment.png"
+  },
+  {
+    "icon": "https://i.postimg.cc/CLqPLkB5/ui-ux.png",
+    "serviceName": "UI-UX Design",
+    "description": "When it comes to UI/UX design, we create experiences that are simple to navigate.",
+    "services": [
+      "User Research",
+      "Wireframe & Prototyping",
+      "Visual UI Design",
+      "Usability Testing"
+    ],
+    "tools": "https://i.postimg.cc/MT3PXYmM/uiTools.png",
+    "thumbnail": "https://i.postimg.cc/Vv5hFhkW/uiux-design.png"
+  },
+  {
+    "icon": "https://i.postimg.cc/7Z6p9tgb/graphic-design.png",
+    "serviceName": "Graphics Design",
+    "description": "Boost your online visibility and rank higher with expert SEO strategies",
+    "services": [
+      "Footage Review",
+      "Rough Cut",
+      "Fine Editing",
+      "Color Grading & Sound Design"
+    ],
+    "tools": "https://i.postimg.cc/Kc13Xmx5/graphic-Tools.png",
+    "thumbnail": "https://i.postimg.cc/fTZscv20/graphic-design.png"
+  },
+  {
+    "icon": "https://i.postimg.cc/dtqMkV32/digital-marketing.png",
+    "serviceName": "Digital Marketing",
+    "description": "Promote your brand online through SEO, social media, content, and paid advertising",
+    "services": [
+      "Research & Strategy",
+      "Content Creation",
+      "Channel Optimization",
+      "Analytics & Improvement"
+    ],
+    "tools": "https://i.postimg.cc/XYkpKJkn/marketing-Tools.png",
+    "thumbnail": "https://i.postimg.cc/pd9MWcT3/digital-marketing.png"
+  },
+  {
+    "icon": "https://i.postimg.cc/X7xRw6BT/seo.png",
+    "serviceName": "SEO",
+    "description": "Boost your online visibility and rank higher with expert SEO strategies",
+    "services": [
+      "Keyword Research",
+      "On Page Optimization",
+      "Technical SEO",
+      "Link Building & Monitoring"
+    ],
+    "tools": "https://i.postimg.cc/156gtMgn/seoTools.png",
+    "thumbnail": "https://i.postimg.cc/ry4yCsq7/seo.png"
+  },
+  {
+    "icon": "https://i.postimg.cc/W1HxHmn8/video-editing.png",
+    "serviceName": "Video Editing",
+    "description": "Transform raw footage into stunning, professional-quality videos that engage and inspire",
+    "services": [
+      "Footage Review",
+      "Rough Cut",
+      "Fine Editing",
+      "Color Grading & Sound Design"
+    ],
+    "tools": "https://i.postimg.cc/BZRL4Rvf/editing-Tools.png",
+    "thumbnail": "https://i.postimg.cc/9ffFGBfB/video-editing.png"
+  }
+]

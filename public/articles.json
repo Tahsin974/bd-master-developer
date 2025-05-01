@@ -1,0 +1,58 @@
+[
+  {
+    "tag": "Web Development",
+    "title": "The Ultimate Guide to Responsive Design",
+    "description": "Learn how to build websites that adapt to any screen size and provide a seamless user experience. This comprehensive guide covers fluid layouts, flexible images, and media queries. Master the techniques to create truly responsive websites.",
+    "image": "https://i.postimg.cc/YCLKzmxF/image1.jpg",
+    "category": "Development"
+  },
+  {
+    "tag": "Digital Marketing",
+    "title": "5 Key Strategies for Effective Social Media Marketing",
+    "description": "Boost your brand presence and engage your audience with these proven social media tactics. Discover the power of content calendars, audience targeting, and insightful analytics. Drive meaningful interactions and conversions through strategic social media efforts.",
+    "image": "https://i.postimg.cc/yNqqQYfb/image2.jpg",
+    "category": "Marketing"
+  },
+  {
+    "tag": "Graphic Design",
+    "title": "Mastering Color Theory for Stunning Visuals",
+    "description": "Understand the fundamentals of color and how to use it effectively in your design projects. Explore the color wheel, harmony, contrast, and the psychological impact of different hues. Create visually appealing and emotionally resonant designs with a solid understanding of color theory.",
+    "image": "https://i.postimg.cc/0QxTvX1G/image3.jpg",
+    "category": "Design"
+  },
+  {
+    "tag": "UI/UX Design",
+    "title": "Wireframing Best Practices for Designers",
+    "description": "Discover how to build effective wireframes that lay the foundation for intuitive user experiences. Learn the tools, tips, and techniques for clear structure and navigation. Optimize user journeys by prototyping smart.",
+    "image": "https://i.postimg.cc/0jyhM6Qb/image4.jpg",
+    "category": "Design"
+  },
+  {
+    "tag": "Freelancing",
+    "title": "How to Build a Personal Brand as a Freelancer",
+    "description": "A strong personal brand sets you apart in a competitive market. Learn how to define your niche, present your work professionally, and grow your reputation. Attract better clients and higher rates with a standout brand.",
+    "image": "https://i.postimg.cc/mDw0g3Tv/image5.jpg",
+    "category": "Career & Freelancing"
+  },
+  {
+    "tag": "Video Editing",
+    "title": "Editing for Impact: Crafting Stories Through Video",
+    "description": "Transform raw footage into compelling narratives that capture attention. Explore pacing, transitions, color grading, and sound design techniques. Make your edits stand out with cinematic flair.",
+    "image": "https://i.postimg.cc/x8HCq6Vt/image8.png",
+    "category": "Design"
+  },
+  {
+    "tag": "Programming",
+    "title": "JavaScript Tips to Write Clean and Efficient Code",
+    "description": "Write maintainable and performant JavaScript with these practical tips. Explore modern ES6+ features, modular architecture, and debugging techniques. Level up your JavaScript skills and reduce bugs.",
+    "image": "https://i.postimg.cc/T2tz8c7m/image6.jpg",
+    "category": "Development"
+  },
+  {
+    "tag": "Career",
+    "title": "Top Soft Skills Every Tech Professional Should Master",
+    "description": "Technical ability is only part of the equation for success in tech. Develop soft skills like communication, collaboration, and problem-solving. Excel in team environments and boost your career growth.",
+    "image": "https://i.postimg.cc/wM4Zh6yF/image7.jpg",
+    "category": "Career & Freelancing"
+  }
+]

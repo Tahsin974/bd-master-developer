@@ -37,7 +37,6 @@ const MySlider = ({
       <Swiper
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         pagination={isPagination}
-        loop={true}
         slidesPerView={mobileViewXs}
         spaceBetween={10}
         breakpoints={{

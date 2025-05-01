@@ -6,6 +6,7 @@ import ServicesPageLayout from "../Pages/ServicesPage/ServicesPageLayout/Service
 import ProjectPageLayout from "../Pages/ProjectPage/ProjectPageLayOut/ProjectPageLayout";
 import AboutPageLayout from "../Pages/AboutPage/AboutPageLayOut/AboutPageLayout";
 import ContactPageLayOut from "../Pages/ContactPage/ContactPageLayOut/ContactPageLayOut";
+import ArticlePageLayOut from "../Pages/ArticlePage/ArticlePageLayOut/ArticlePageLayOut";
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <ContactPageLayOut />,
+      },
+      {
+        path: "/articles",
+        element: <ArticlePageLayOut />,
       },
     ],
   },

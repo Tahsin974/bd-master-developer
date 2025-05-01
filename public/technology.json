@@ -1,0 +1,261 @@
+[
+  {
+    "category": "Website",
+    "subCategory": "Front End",
+    "name": "HTML",
+    "img": "https://i.postimg.cc/L8ZsMf69/html.png"
+  },
+  {
+    "category": "Website",
+    "subCategory": "Front End",
+    "name": "CSS",
+    "img": "https://i.postimg.cc/dt314pbT/css.png"
+  },
+  {
+    "category": "Website",
+    "subCategory": "Front End",
+    "name": "JavaScript",
+    "img": "https://i.postimg.cc/CL2KtJ0r/js.png"
+  },
+  {
+    "category": "Website",
+    "subCategory": "Front End",
+    "name": "React js",
+    "img": "https://i.postimg.cc/3Nc3srs0/react.png"
+  },
+  {
+    "category": "Website",
+    "subCategory": "Back End",
+    "name": "PHP",
+    "img": "https://i.postimg.cc/J767DKs7/php.png"
+  },
+  {
+    "category": "Website",
+    "subCategory": "Front End",
+    "name": "Vue.js",
+    "img": "https://i.postimg.cc/QxF8p57Q/vuejs.png"
+  },
+  {
+    "category": "Website",
+    "subCategory": "Back End",
+    "name": "Node.js",
+    "img": "https://i.postimg.cc/0jQ8XKBq/nodejs.png"
+  },
+  {
+    "category": "Website",
+    "subCategory": "Back End",
+    "name": "Laraval",
+    "img": "https://i.postimg.cc/vmrH4sVC/laraval.png"
+  },
+  {
+    "category": "Website",
+    "subCategory": "Database",
+    "name": "MySQL",
+    "img": "https://i.postimg.cc/G2zLjxzQ/mysql.png"
+  },
+  {
+    "category": "Website",
+    "subCategory": "Database",
+    "name": "MongoDB",
+    "img": "https://i.postimg.cc/50f9vR5y/mongodb.png"
+  },
+
+  {
+    "category": "UX/UI Design",
+    "subCategory": "Wireframe",
+    "name": "Wireframing",
+    "img": "https://i.postimg.cc/PJQ7wx89/layout.png"
+  },
+  {
+    "category": "UX/UI Design",
+    "subCategory": "Prototype",
+    "name": "Prototyping",
+    "img": "https://i.postimg.cc/8PT9Vh2S/prototype.png"
+  },
+  {
+    "category": "UX/UI Design",
+    "subCategory": "Testing",
+    "name": "Usability Testing",
+    "img": "https://i.postimg.cc/zXpMDyNR/test.png"
+  },
+  {
+    "category": "UX/UI Design",
+    "subCategory": "Figma",
+    "name": "Figma",
+    "img": "https://i.postimg.cc/3RpV39rK/figma.png"
+  },
+  {
+    "category": "UX/UI Design",
+    "subCategory": "Sketch",
+    "name": "Sketch",
+    "img": "https://i.postimg.cc/tR3wfrmk/sketch.png"
+  },
+  {
+    "category": "UX/UI Design",
+    "subCategory": "XD",
+    "name": "Adobe XD",
+    "img": "https://i.postimg.cc/DwZNS7fp/xd.png"
+  },
+  {
+    "category": "UX/UI Design",
+    "subCategory": "Illustrator",
+    "name": "Adobe Illustrator",
+    "img": "https://i.postimg.cc/D0TD0sm1/illustrator.png"
+  },
+  {
+    "category": "Video Editing",
+    "subCategory": "Cutting",
+    "name": "Video Cutting & Trimming",
+    "img": "https://i.postimg.cc/cCnsNG0D/cut.png"
+  },
+  {
+    "category": "Video Editing",
+    "subCategory": "Motion",
+    "name": "Motion Graphics",
+    "img": "https://i.postimg.cc/8sgTpXCT/motion.png"
+  },
+  {
+    "category": "Video Editing",
+    "subCategory": "Color",
+    "name": "Color Correction & Grading",
+    "img": "https://i.postimg.cc/50j4nFGW/color.png"
+  },
+  {
+    "category": "Video Editing",
+    "subCategory": "Audio",
+    "name": "Audio Editing",
+    "img": "https://i.postimg.cc/k5TMQyTy/audio.png"
+  },
+  {
+    "category": "Video Editing",
+    "subCategory": "VFX",
+    "name": "Visual Effects (VFX)",
+    "img": "https://i.postimg.cc/9QVq1JB3/vfx.png"
+  },
+  {
+    "category": "Video Editing",
+    "subCategory": "Story",
+    "name": "Storytelling",
+    "img": "https://i.postimg.cc/4Np9zrVb/story.png"
+  },
+  {
+    "category": "Video Editing",
+    "subCategory": "Encoding",
+    "name": "Video Encoding & Export",
+    "img": "https://i.postimg.cc/bJMzMwcD/encode.png"
+  },
+  {
+    "category": "Video Editing",
+    "subCategory": "Software",
+    "name": "Software Proficiency",
+    "img": "https://i.postimg.cc/T2zb5RL3/software.png"
+  },
+  {
+    "category": "Video Editing",
+    "subCategory": "Multicam",
+    "name": "Multi-Camera Editing",
+    "img": "https://i.postimg.cc/L4YfsqsW/multi-camera.png"
+  },
+  {
+    "category": "Graphics Design",
+    "subCategory": "Branding",
+    "name": "Branding & Identity",
+    "img": "https://i.postimg.cc/vZKGBqy9/branding.png"
+  },
+  {
+    "category": "Graphics Design",
+    "subCategory": "Typography",
+    "name": "Typography",
+    "img": "https://i.postimg.cc/8cwSVww7/typography.png"
+  },
+  {
+    "category": "Graphics Design",
+    "subCategory": "Color",
+    "name": "Color Theory",
+    "img": "https://i.postimg.cc/pdnRnfVS/color.png"
+  },
+  {
+    "category": "Graphics Design",
+    "subCategory": "Layout",
+    "name": "Layout & Composition",
+    "img": "https://i.postimg.cc/sXdyPMvg/layout.png"
+  },
+  {
+    "category": "Graphics Design",
+    "subCategory": "Illustrator",
+    "name": "Adobe Illustrator",
+    "img": "https://i.postimg.cc/D0TD0sm1/illustrator.png"
+  },
+  {
+    "category": "Graphics Design",
+    "subCategory": "Photoshop",
+    "name": "Adobe Photoshop",
+    "img": "https://i.postimg.cc/26QY0CZF/photoshop.png"
+  },
+  {
+    "category": "Graphics Design",
+    "subCategory": "Vector",
+    "name": "Vector Graphics",
+    "img": "https://i.postimg.cc/MKKwY2KV/vector.png"
+  },
+  {
+    "category": "Graphics Design",
+    "subCategory": "Print",
+    "name": "Print Design",
+    "img": "https://i.postimg.cc/ZnJSgXPk/print-Design.png"
+  },
+  {
+    "category": "Graphics Design",
+    "subCategory": "UI/UX",
+    "name": "UI/UX Design (Basics)",
+    "img": "https://i.postimg.cc/c1cZY4Zd/uiux.png"
+  },
+  {
+    "category": "Digital Marketing",
+    "subCategory": "SEO",
+    "name": "SEO",
+    "img": "https://i.postimg.cc/nLdSZgtb/seo.png"
+  },
+  {
+    "category": "Digital Marketing",
+    "subCategory": "Content",
+    "name": "Content Marketing",
+    "img": "https://i.postimg.cc/T364cncS/content.png"
+  },
+  {
+    "category": "Digital Marketing",
+    "subCategory": "Social",
+    "name": "Social Media Marketing",
+    "img": "https://i.postimg.cc/zBVtf7JL/social.png"
+  },
+  {
+    "category": "Digital Marketing",
+    "subCategory": "Email",
+    "name": "Email Marketing",
+    "img": "https://i.postimg.cc/K8Dsp4qY/email.png"
+  },
+  {
+    "category": "Digital Marketing",
+    "subCategory": "Analytics",
+    "name": "Data Analysis",
+    "img": "https://i.postimg.cc/2j1Mjk6H/analytics.png"
+  },
+  {
+    "category": "Digital Marketing",
+    "subCategory": "PPC",
+    "name": "PPC Advertising",
+    "img": "https://i.postimg.cc/Rqrc4QFz/ads.png"
+  },
+  {
+    "category": "Digital Marketing",
+    "subCategory": "Video",
+    "name": "Video Marketing",
+    "img": "https://i.postimg.cc/G2VMTD2X/video.png"
+  },
+  {
+    "category": "Digital Marketing",
+    "subCategory": "Automation",
+    "name": "Marketing Automation",
+    "img": "https://i.postimg.cc/156d6vDw/automation.png"
+  }
+]

@@ -36,9 +36,10 @@ const TechnologySection = () => {
           >
             {/* Subheading text with a description of services */}
             <p className="ruluko-regular font-semibold text-gray-500">
-              Bd Master Developer works in multiple sectors including website
-              development, API development, Digital Marketing, UI/UX & SEO. Our
-              dream is to continue your journey with success{" "}
+              <strong>Bd Master Developer</strong> stays ahead with modern
+              technologies to deliver fast, secure, and scalable solutions. From
+              front-end to back-end, we use the latest tools to ensure top-notch
+              performance.{" "}
             </p>
           </SectionTitle>
 

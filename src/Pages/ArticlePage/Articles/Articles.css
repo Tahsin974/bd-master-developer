@@ -1,0 +1,28 @@
+.category-button {
+  background-color: rgb(29, 29, 29);
+  color: aliceblue;
+}
+.article-tag {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 50px;
+  background: #f8fdfe;
+  box-shadow: 0.64px 0.64px 1.6px 0.32px #b8b9be inset,
+    -0.96px -0.96px 10px 0.32px #fff inset;
+}
+.article-card {
+  display: flex;
+  padding: 16px 16px 24px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  flex: 1 0 0;
+  border-radius: 14px;
+  border: 1px solid #e5e8f2;
+  background: #f8fdfe;
+  box-shadow: 4px 6px 16px 0px rgba(184, 185, 190, 0.5), -6px -6px 12px 0px #fff;
+}

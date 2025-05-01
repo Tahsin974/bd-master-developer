@@ -89,9 +89,11 @@ const AboutSection = () => {
             */}
 
             <div className="mt-8">
-              <ButtonBlue>
-                Book a Meeting <FaArrowRightLong />
-              </ButtonBlue>
+              <a href="https://api.whatsapp.com/send/?phone=%2B8801768789018">
+                <ButtonBlue>
+                  Book a Meeting <FaArrowRightLong />
+                </ButtonBlue>
+              </a>
             </div>
           </div>
           {/* 

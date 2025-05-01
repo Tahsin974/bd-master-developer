@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 
-const PageTitle = ({ pageName }) => {
+const PageTitle = ({ pageName, children }) => {
   return (
     <div>
       <div className="hero bg-gradient-to-t from-[#B1F2F4CC] to-white pt-36 pb-28 h-[500px]">
@@ -25,8 +25,8 @@ const PageTitle = ({ pageName }) => {
                 </ul>
               </div>
             </div>
-            <h1 className="xl:text-5xl/normal lg:text-5xl/normal md:text-5xl/normal sm:text-5xl/normal text-4xl/normal    inter-bold">
-              We turn great ideas into excellent project
+            <h1 className="xl:text-4xl/normal lg:text-4xl/normal md:text-4xl/normal sm:text-4xl/normal text-3xl/normal    inter-bold">
+              {children}
             </h1>
           </div>
         </div>

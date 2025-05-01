@@ -1,19 +1,18 @@
-import PageTitle from "../../../Components/PageTitle/PageTitle";
+import React from "react";
 import useLoading from "../../../Utils/Hooks/useLoading";
-import ContactForm from "../ContactForm/ContactForm";
-import Map from "../Map/Map";
+import PageTitle from "../../../Components/PageTitle/PageTitle";
+import Blogs from "../Articles/Blogs";
 
-const ContactPageLayOut = () => {
+const BlogPageLayOut = () => {
   const { loading } = useLoading();
   return (
     <div>
       {!loading ? (
         <div>
-          <PageTitle pageName={"contact"}>
-            Let’s Build Something Great Together
+          <PageTitle pageName={"blogs"}>
+            Exploring Trends, Sharing Knowledge
           </PageTitle>
-          <ContactForm />
-          <Map />
+          <Blogs />
         </div>
       ) : (
         <div className="flex items-center justify-center min-h-screen">
@@ -24,4 +23,4 @@ const ContactPageLayOut = () => {
   );
 };
 
-export default ContactPageLayOut;
+export default BlogPageLayOut;

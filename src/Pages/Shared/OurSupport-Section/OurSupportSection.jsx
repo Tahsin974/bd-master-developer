@@ -38,9 +38,12 @@ const OurSupportSection = () => {
           {/* Description of the support services */}
 
           <div className="mt-8">
-            <ButtonBlue>
-              Get Support <FaArrowRightLong />
-            </ButtonBlue>
+            <a href="https://api.whatsapp.com/send/?phone=%2B8801768789018">
+              <ButtonBlue>
+                Get Support <FaArrowRightLong />
+              </ButtonBlue>
+            </a>
+
             {/* Call-to-action button with an arrow icon */}
           </div>
         </div>

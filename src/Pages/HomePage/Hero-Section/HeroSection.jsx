@@ -57,9 +57,12 @@ const HeroSection = () => {
             ------------------------------------------------
             */}
             <div className="space-x-4 mb-14">
-              <ButtonBlue>
-                Book a Meeting <FaArrowRightLong />
-              </ButtonBlue>
+              <a href="https://api.whatsapp.com/send/?phone=%2B8801768789018">
+                <ButtonBlue>
+                  Book a Meeting <FaArrowRightLong />
+                </ButtonBlue>
+              </a>
+
               <button className="btn btn-green btn-sm md:btn-md lg:btn-lg xl:btn-lg text-[#1D2345]">
                 Sign Up
               </button>

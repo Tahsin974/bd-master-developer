@@ -1,0 +1,74 @@
+[
+  {
+    "author": {
+      "name": "Hiro Nakamura",
+      "handle": "@hiro_nakamura",
+      "profileImageUrl": "https://i.postimg.cc/3wwvGJd6/Hiro-Nakamura.jpg"
+    },
+    "quote": "Really, really liking @reflectnotes so far. It's just the right amount of simple/fast for a personal note taking app and does most of the hard work of organizing in the background.",
+    "rating": 5
+  },
+  {
+    "author": {
+      "name": "Giulia Esposito",
+      "handle": "@giulia_esposito",
+      "profileImageUrl": "https://i.postimg.cc/65dnJmkH/Giulia-Esposito.jpg"
+    },
+    "quote": "This product has completely changed the way I work! It's intuitive and incredibly efficient. Highly recommend!",
+    "rating": 5
+  },
+  {
+    "author": {
+      "name": "Elena Dimitrova",
+      "handle": "@elena_dimitrova",
+      "profileImageUrl": "https://i.postimg.cc/m2xCns5z/Elena-Dimitrova.jpg"
+    },
+    "quote": "Excellent service and the team was very responsive to my needs. I'm very happy with the results.",
+    "rating": 4
+  },
+  {
+    "author": {
+      "name": "Camille Laurent",
+      "handle": "@camille_laurent",
+      "profileImageUrl": "https://i.postimg.cc/RCJwGFXx/Camille-Laurent.jpg"
+    },
+    "quote": "A solid and well-built product. It does exactly what it promises and the updates are frequent.",
+    "rating": 4
+  },
+  {
+    "author": {
+      "name": "Javier Garcia",
+      "handle": "@javier_garcia",
+      "profileImageUrl": "https://i.postimg.cc/x15mqbTM/Javier-Garcia.jpg"
+    },
+    "quote": "Superb experience! Everything worked seamlessly, and the customer support was outstanding.",
+    "rating": 5
+  },
+  {
+    "author": {
+      "name": "Lena Petrov",
+      "handle": "@lena_petrov",
+      "profileImageUrl": "https://i.postimg.cc/s20Z4dW2/Lena-Petrov.jpg"
+    },
+    "quote": "Very intuitive and user-friendly. I found it easy to get started and stay productive.",
+    "rating": 4
+  },
+  {
+    "author": {
+      "name": "Wei Zhang",
+      "handle": "@wei_zhang",
+      "profileImageUrl": "https://i.postimg.cc/vBJgCr3F/Wei-Zhang.png"
+    },
+    "quote": "Perfect for teams who want to stay on the same page. It made our workflow 10x smoother.",
+    "rating": 5
+  },
+  {
+    "author": {
+      "name": "Youssef Khalil",
+      "handle": "@youssef_khalil",
+      "profileImageUrl": "https://i.postimg.cc/tTZnrSdN/Youssef-Khalil.jpg"
+    },
+    "quote": "Clean design and powerful features. It’s exactly what I needed in a modern app.",
+    "rating": 5
+  }
+]

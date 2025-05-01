@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Md.Rubel Islam",
+    "title": "Full Stack Web Developer",
+    "facebookUrl": "https://www.facebook.com/rubel1739",
+    "linkedinUrl": "https://www.linkedin.com/in/rubel1739/",
+    "websiteUrl": "https://rubelislam.com/",
+    "profileImage": "https://i.postimg.cc/yYfQVRH3/rubel.jpg"
+  },
+  {
+    "name": "Siyam Mollah",
+    "title": "WordPress Developer",
+    "facebookUrl": "https://www.facebook.com/profile.php?id=100046666962066",
+    "linkedinUrl": "https://www.linkedin.com/in/md-siyam-98430429a/",
+    "websiteUrl": "#",
+    "profileImage": "https://i.postimg.cc/HLMB4P7b/siyam.jpg"
+  },
+  {
+    "name": "Tahsin Islam",
+    "title": "MERN Stack Web Developer",
+    "linkedinUrl": "https://www.linkedin.com/in/tahsin-islam477",
+    "facebookUrl": "https://www.facebook.com/share/1GeAd7TTtX/",
+    "websiteUrl": "#",
+    "profileImage": "https://i.postimg.cc/SspVZ7W3/tahsin.jpg"
+  },
+  {
+    "name": "Sanjida Hosen",
+    "title": "Digital Marketer",
+    "facebookUrl": "#",
+    "linkedinUrl": "#",
+    "websiteUrl": "#",
+    "profileImage": "https://i.postimg.cc/QdH6VM84/sanjida.jpg"
+  },
+  {
+    "name": "SK Rezwan",
+    "title": "Digital Marketer",
+    "facebookUrl": "#",
+    "linkedinUrl": "#",
+    "websiteUrl": "#",
+    "profileImage": "https://i.postimg.cc/0yHhN0DJ/skrezwan.jpg"
+  },
+  {
+    "name": "Abu Fahim",
+    "title": "UX/UI Designer",
+    "facebookUrl": "#",
+    "linkedinUrl": "#",
+    "websiteUrl": "#",
+    "profileImage": "https://i.postimg.cc/CL0s0pqZ/fahim.jpg"
+  },
+  {
+    "name": "Ariful Islam",
+    "title": "Graphics Designer",
+    "facebookUrl": "#",
+    "linkedinUrl": "#",
+    "websiteUrl": "#",
+    "profileImage": "https://i.postimg.cc/MKYbK379/ariful.jpg"
+  },
+  {
+    "name": "Sabbir Hossain Antor",
+    "title": "Video Editor",
+    "facebookUrl": "#",
+    "linkedinUrl": "#",
+    "websiteUrl": "#",
+    "profileImage": "https://i.postimg.cc/0jT8r0bk/antor.jpg"
+  }
+]

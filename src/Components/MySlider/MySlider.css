@@ -46,6 +46,12 @@
     max-width: 400px !important;
   }
 }
+@media only screen and (max-width: 611px) and (min-width: 320px) {
+  .swiper {
+    margin-inline: auto;
+    max-width: 400px !important;
+  }
+}
 @media only screen and (max-width: 1005px) and (min-width: 880px) {
   .swiper {
     margin-inline: auto;

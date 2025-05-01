@@ -1,4 +1,3 @@
-import { Link } from "react-router";
 import logo from "../../../assets/Logo/white-logo.png";
 import "./Footer.css";
 import { MdPhoneAndroid } from "react-icons/md";
@@ -37,9 +36,12 @@ const Footer = () => {
               </p>
             </div>
             <div className="xl:w-2/5 lg:w-2/5">
-              <button className="btn btn-sm md:btn-md lg:btn-lg xl:btn-lg text-white booking-button  bg-[#004B54] ruluko-bold">
-                Book a Meeting
-              </button>
+              <a href="https://api.whatsapp.com/send/?phone=%2B8801768789018">
+                <button className="btn btn-sm md:btn-md lg:btn-lg xl:btn-lg text-white booking-button  bg-[#004B54] ruluko-bold">
+                  Book a Meeting
+                </button>
+              </a>
+
               <div className="font-light mt-6 flex gap-2 items-center">
                 <FaRegCheckCircle size={20} />
                 <p>No Credit Card Required</p>
@@ -61,16 +63,27 @@ const Footer = () => {
             <h6 className="inter-bold text-lg mb-1.5">Bd Master Developer</h6>
             <ul>
               <li>
-                <Link className="link link-hover text-gray-400">About Us</Link>
+                <a href="/about#" className="link link-hover text-gray-400">
+                  About Us
+                </a>
               </li>
               <li>
-                <Link className="link link-hover text-gray-400">Our Team</Link>
+                <a
+                  href="/about#team-member"
+                  className="link link-hover text-gray-400"
+                >
+                  Our Team
+                </a>
               </li>
               <li>
-                <Link className="link link-hover text-gray-400">Services</Link>
+                <a href="/services" className="link link-hover text-gray-400">
+                  Services
+                </a>
               </li>
               <li>
-                <Link className="link link-hover text-gray-400">Packages</Link>
+                <a href="/projects" className="link link-hover text-gray-400">
+                  Projects
+                </a>
               </li>
             </ul>
           </nav>
@@ -85,9 +98,9 @@ const Footer = () => {
           <ul>
             <h6 className="inter-bold text-lg mb-1.5">Supports</h6>
             <li className="text-gray-400">Lifetime Access</li>
-            <li className="text-gray-400">24/7 Support From Mentor</li>
+            <li className="text-gray-400">Personalized Project Guidance</li>
             <li className="text-gray-400">Fast Delivery Your Project</li>
-            <li className="text-gray-400">Self Development</li>
+            <li className="text-gray-400">Dedicated Client Support</li>
           </ul>
           <div>
             <h6 className="inter-bold text-lg mb-1.5">Contract</h6>

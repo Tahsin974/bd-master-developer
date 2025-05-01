@@ -8,20 +8,30 @@ import HeroSection from "../Hero-Section/HeroSection";
 import ServiceSection from "../Service-Section/ServiceSection";
 import TeamMemberSection from "../TeamMember-Section/TeamMemberSection";
 import TechnologySection from "../Technology-Section/TechnologySection/TechnologySection";
+import useLoading from "../../../Utils/Hooks/useLoading";
 
 const HomePageLayOut = () => {
+  const { loading } = useLoading();
   return (
     <div>
-      <HeroSection />
-      <AccomplishmentSection />
-      <AboutSection />
-      <ServiceSection />
-      <TechnologySection />
-      <TestimonialSection />
-      <TeamMemberSection />
-      <ArticlesSection />
-      <OurSupportSection />
-      <ConsultationSection />
+      {!loading ? (
+        <div>
+          <HeroSection />
+          <AccomplishmentSection />
+          <AboutSection />
+          <ServiceSection />
+          <TechnologySection />
+          <TestimonialSection />
+          <TeamMemberSection />
+          <ArticlesSection />
+          <OurSupportSection />
+          <ConsultationSection />
+        </div>
+      ) : (
+        <div className="flex items-center justify-center min-h-screen">
+          <span className="loading loading-spinner text-primary"></span>
+        </div>
+      )}
     </div>
   );
 };

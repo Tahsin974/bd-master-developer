@@ -28,9 +28,10 @@ const ServiceSection = () => {
           >
             {/* Description text below the Section Title */}
             <p className="ruluko-regular font-semibold text-gray-500">
-              Bd Master Developer works in multiple Sector including website
-              development, API development, Digital Marketing, UI/UX & SEO. Our
-              dream is to continue your journey with success.
+              We offer a full range of digital services including Website
+              Development, API Integration, UI/UX Design, SEO, and Digital
+              Marketing. <strong>Bd Master Developer</strong> is your all-in-one
+              tech partner for growth.
             </p>
           </SectionTitle>
 

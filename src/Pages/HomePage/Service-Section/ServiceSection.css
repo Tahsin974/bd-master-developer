@@ -68,9 +68,27 @@
       -6px -6px 12px 0px #fff;
   }
 }
-@media only screen and (max-width: 1023px) and (min-width: 768px) {
+@media only screen and (max-width: 899px) and (min-width: 768px) {
   .service-section-cards {
-    max-width: 1023px;
+    max-width: 768px;
+    margin-inline: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+  }
+  .service-section-card {
+    width: 170px;
+    height: 200px;
+    border-radius: 14px;
+    border: 1px solid #e5e8f2;
+    background: #f8fdfe;
+    box-shadow: 4px 6px 16px 0px rgba(184, 185, 190, 0.5),
+      -6px -6px 12px 0px #fff;
+  }
+}
+@media only screen and (max-width: 1023px) and (min-width: 900px) {
+  .service-section-cards {
+    max-width: 800px;
     margin-inline: auto;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
