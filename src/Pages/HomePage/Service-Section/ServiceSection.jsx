@@ -12,7 +12,7 @@ const ServiceSection = () => {
   return (
     <div>
       {/* Container with background color and padding */}
-      <div className=" bg-[#F8FDFE] py-10 my-24 ">
+      <div className=" bg-[#F8FDFE] py-20 ">
         <div className="max-w-[1280px] mx-auto xl:px-12 lg:px-12 md:px-12 px-6 space-y-16">
           {/* Section Title */}
           <SectionTitle

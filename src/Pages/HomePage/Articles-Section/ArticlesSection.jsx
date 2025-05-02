@@ -21,7 +21,7 @@ const ArticlesSection = () => {
   return (
     <>
       {!isPending ? (
-        <div className="bg-[#F8FDFE] min-h-screen my-24 py-10">
+        <div className="bg-[#F8FDFE] min-h-screen py-20">
           {/* Container for the articles section with padding and background color */}
           <div className="max-w-[1280px] mx-auto xl:px-12 lg:px-12 md:px-12 px-6 space-y-5">
             {/* Section Title */}
@@ -52,7 +52,7 @@ const ArticlesSection = () => {
                 {/* Mapping through the articles and rendering each article as a SwiperSlide */}
                 {articles.map((article) => (
                   <SwiperSlide key={article._id}>
-                    <div className="card article-card custom-shadow h-[700px] p-4">
+                    <div className="card article-card custom-shadow xl:h-[700px] lg:h-[700px] h-[650px] p-4">
                       <figure>
                         {/* Displaying article image */}
                         <img
@@ -98,7 +98,7 @@ const ArticlesSection = () => {
 
               {/* View More Button at the bottom */}
               <div className="flex justify-center">
-                <Link to="/articles">
+                <Link to="/articles#">
                   <ButtonWhite>View More Blog</ButtonWhite>
                 </Link>
               </div>

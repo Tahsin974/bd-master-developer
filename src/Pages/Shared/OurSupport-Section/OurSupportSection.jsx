@@ -4,7 +4,7 @@ import diagram from "../../../assets/SupportSection/support.svg";
 
 const OurSupportSection = () => {
   return (
-    <div className=" bg-[#F8FDFE] text-[#1D2345] min-h-full">
+    <div className=" bg-[#F8FDFE] text-[#1D2345] h-[min-content]">
       {/* Main container with background and text color */}
 
       <div className="hero-content flex-col xl:flex-row lg:flex-row max-w-[1280px] mx-auto lg:gap-x-[90px] lg:gap-y-0 xl:gap-x-[90px] xl:gap-y-0 gap-y-20 xl:px-12 lg:px-12 md:px-12 px-6 py-10 my-20">

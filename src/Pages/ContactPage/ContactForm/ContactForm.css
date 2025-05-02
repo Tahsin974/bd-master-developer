@@ -11,3 +11,9 @@
 .floating-label {
   width: 100%;
 }
+input:-webkit-autofill {
+  background-color: #313964 !important;
+  -webkit-box-shadow: 2px 2px 5px 1px #313964 inset,
+    -3px -3px 7px 1px #f8fdfe inset !important;
+  -webkit-text-fill-color: #f8fdfe !important;
+}

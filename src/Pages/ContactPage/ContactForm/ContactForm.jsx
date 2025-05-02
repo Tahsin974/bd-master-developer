@@ -3,7 +3,31 @@ import "./ContactForm.css";
 import location from "../../../assets/ContactPage/location.png";
 import phone from "../../../assets/ContactPage/phone.png";
 import email from "../../../assets/ContactPage/email.png";
+import { useForm } from "react-hook-form";
+import UseAxiosPublic from "../../../Utils/AxiosPublic/UseAxiosPublic";
+import Swal from "sweetalert2";
 const ContactForm = () => {
+  const axiosPublic = UseAxiosPublic();
+  const { register, handleSubmit, reset } = useForm();
+  const onSubmit = (data) => {
+    axiosPublic.post("/contact", data).then((res) => {
+      if (res.data.insertedId) {
+        Swal.fire({
+          icon: "success",
+          title: "Your Form Has Been Submitted Successfully",
+          showConfirmButton: false,
+          timer: 1500,
+        });
+        reset();
+      } else {
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Something went wrong! Please Fill Up The Form Again",
+        });
+      }
+    });
+  };
   return (
     <div>
       <div className=" bg-[#F8FDFE] text-[#1D2345] h-[min-content] my-20">
@@ -70,28 +94,39 @@ const ContactForm = () => {
             </div>
             <div className="card custom-shadow bg-[#F8FDFE] text-[#1D2345] xl:w-1/2 lg:w-1/2">
               <div className="card-body">
-                <fieldset className="fieldset xl:grid-cols-2 lg:grid-cols-2 space-y-2.5  gap-2">
+                <form
+                  onSubmit={handleSubmit(onSubmit)}
+                  className="fieldset xl:grid-cols-2 lg:grid-cols-2 space-y-2.5  gap-2"
+                >
                   <input
                     type="text"
                     className="input input-sm md:input-md lg:input-lg xl:input-xl w-full bg-[#1d234528] custom-shadow-inner p-5"
                     placeholder="Your Name"
+                    {...register("name")}
+                    required
                   />
                   <input
                     type="email"
                     className="input input-sm md:input-md lg:input-lg xl:input-xl w-full bg-[#1d234528] custom-shadow-inner p-5"
                     placeholder="Email"
+                    {...register("email")}
+                    required
                   />
                   <input
-                    type="email"
-                    className="input input-sm md:input-md lg:input-lg xl:input-xl w-full bg-[#1d234528] xl:col-span-2 lg:col-span-2 custom-shadow-inner p-5"
+                    type="number"
+                    className="input input-sm md:input-md lg:input-lg xl:input-xl w-full bg-[#1d234528] xl:col-span-2 lg:col-span-2 custom-shadow-inner p-5 "
                     placeholder="Phone Number"
+                    {...register("phone")}
+                    required
                   />
                   <textarea
                     className="textarea textarea-sm md:textarea-md lg:textarea-lg xl:textarea-xl w-full bg-[#1d234528] xl:col-span-2 lg:col-span-2 h-36 custom-shadow-inner p-5"
                     placeholder="Message"
+                    {...register("message")}
+                    required
                   ></textarea>
                   <ButtonBlue>Submit</ButtonBlue>
-                </fieldset>
+                </form>
               </div>
             </div>
           </div>

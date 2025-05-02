@@ -19,7 +19,7 @@ const TestimonialSection = () => {
   return (
     <div>
       {!isPending ? (
-        <div className="bg-[#F8FDFE] min-h-screen my-24 py-20">
+        <div className="bg-[#F8FDFE] min-h-screen py-20">
           <div className="max-w-[1280px] mx-auto xl:px-12 lg:px-12 md:px-12 px-6 space-y-16">
             {/* -----------------------------------------------
             Section Title 

@@ -36,14 +36,18 @@ const Articles = () => {
   return (
     <div className="bg-[#F8FDFE] min-h-screen ">
       <div className="max-w-[1280px] mx-auto  space-y-5 flex flex-col xl:flex-row lg:flex-row gap-10 ">
-        <aside className="min-h-screen m-0 xl:w-80 lg:w-80 bg-[#e0e3e4]  border-r py-20  px-6 space-y-3.5">
+        <aside className="xl:min-h-screen lg:min-h-screen  m-0 xl:w-80 lg:w-80 bg-[#e0e3e4]  border-r py-20  px-6 space-y-3.5">
           <h1 className="inter-bold text-xl text-center">Category</h1>
           <div className="space-y-2.5">
             {categories.map((cate, index) => (
               <button
                 key={index}
                 onClick={() => setCategory(`${cate}`)}
-                className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-lg btn-block category-button"
+                className={`btn btn-sm md:btn-md lg:btn-lg xl:btn-lg btn-block  rounded-full ${
+                  cate === category
+                    ? "bg-[#F8FDFE] text-[#1D2345]"
+                    : "category - button"
+                }`}
               >
                 {cate}
               </button>
@@ -51,7 +55,7 @@ const Articles = () => {
           </div>
         </aside>
 
-        <article className="flex-1 pt-10 pb-20 xl:px-0 lg:px-0 md:px-12 px-6 space-y-6">
+        <article className="flex-1 py-20 xl:px-0 lg:px-0 md:px-12 px-6 space-y-6">
           {/* Search Bar */}
           <form
             onSubmit={handleSearch}
@@ -63,7 +67,7 @@ const Articles = () => {
               placeholder="Search"
               className="input input-bordered join-item w-full bg-[#F8FDFE]"
             />
-            <button className="btn join-item category-button btn-md">
+            <button className="btn join-item bg-[#1D2345] text-[#F8FDFE] btn-md">
               Search
             </button>
           </form>
@@ -71,7 +75,7 @@ const Articles = () => {
             {displayArticles.map((article) => (
               <div
                 key={article._id}
-                className="card article-card custom-shadow h-[700px] p-4"
+                className="card article-card custom-shadow xl:h-[700px] lg:h-[700px] h-[650px] p-4"
               >
                 <figure>
                   {/* Displaying article image */}

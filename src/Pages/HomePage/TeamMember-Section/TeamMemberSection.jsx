@@ -23,7 +23,7 @@ const TeamMemberSection = () => {
   console.log(members);
 
   return (
-    <div id="team-member" className="bg-[#F8FDFE] h-[min-content] my-24 py-10 ">
+    <div id="team-member" className="bg-[#F8FDFE] h-[min-content] py-20 ">
       {!isPending ? (
         <div className="max-w-[1280px] mx-auto xl:px-12 lg:px-12 md:px-12 px-6 space-y-5">
           {/* Section Title with a gradient color for "Dedicated" */}
