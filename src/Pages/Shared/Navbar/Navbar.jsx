@@ -5,9 +5,11 @@ import { IoCloseOutline } from "react-icons/io5";
 import "./Navbar.css";
 import useSelectedLinkContext from "../../../Context/useSelectedLinkContext";
 import { HashLink } from "react-router-hash-link";
+import { useLocation } from "react-router";
 const Navbar = ({ children }) => {
   const { selectedLink } = useSelectedLinkContext();
   const [scrolling, setScrolling] = useState(false);
+  const location = useLocation();
   // menu close handle function
   const drawerRef = useRef(null);
   const handleMenu = () => {
@@ -15,6 +17,12 @@ const Navbar = ({ children }) => {
       drawerRef.current.checked = false;
     }
   };
+
+  useEffect(() => {
+    if (drawerRef.current) {
+      drawerRef.current.checked = false;
+    }
+  }, [location.pathname]);
 
   const navOptions = (
     <>
@@ -51,6 +59,16 @@ const Navbar = ({ children }) => {
       </li>
       <li>
         <HashLink
+          to="/blogs#"
+          className={` text-[#1D2345] text-lg bg-transparent  ${
+            selectedLink === "/blogs" && "selected-link"
+          }`}
+        >
+          Blogs
+        </HashLink>
+      </li>
+      {/* <li>
+        <HashLink
           to="/projects#"
           className={` text-[#1D2345] text-lg bg-transparent  ${
             selectedLink === "/projects" && "selected-link"
@@ -58,7 +76,7 @@ const Navbar = ({ children }) => {
         >
           Projects
         </HashLink>
-      </li>
+      </li> */}
 
       <li>
         <HashLink

@@ -3,7 +3,7 @@ import vision from "../../../assets/AboutPage/vision.jpg";
 const Vision = () => {
   return (
     <div>
-      <div className="hero bg-[#F8FDFE] text-[#1D2345] h-[min-content] my-20">
+      <div className="hero bg-[#F8FDFE] text-[#1D2345] h-[min-content] xl:py-20 lg:py-20 md:py-14 sm:py-12 py-10">
         <div className="hero-content flex-col lg:flex-row-reverse gap-6">
           <img
             src={vision}

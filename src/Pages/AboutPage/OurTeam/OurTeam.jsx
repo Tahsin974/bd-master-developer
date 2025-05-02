@@ -13,7 +13,10 @@ const OurTeam = () => {
     },
   });
   return (
-    <div id="team" className="bg-[#F8FDFE] min-h-screen py-20">
+    <div
+      id="team"
+      className="bg-[#F8FDFE] min-h-screen xl:py-20 lg:py-20 md:py-14 sm:py-12 py-10"
+    >
       {!isPending ? (
         <div className="max-w-[1280px] mx-auto xl:px-12 lg:px-12 md:px-12 px-6 space-y-16">
           {/*

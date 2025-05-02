@@ -1,18 +1,18 @@
 import React from "react";
 import useLoading from "../../../Utils/Hooks/useLoading";
 import PageTitle from "../../../Components/PageTitle/PageTitle";
-import Articles from "../Articles/Articles";
+import Blogs from "../Blogs/Blogs";
 
-const ArticlePageLayOut = () => {
+const BlogPageLayOut = () => {
   const { loading } = useLoading();
   return (
     <div>
       {!loading ? (
         <div>
-          <PageTitle pageName={"articles"}>
+          <PageTitle pageName={"blogs"}>
             Exploring Trends, Sharing Knowledge
           </PageTitle>
-          <Articles />
+          <Blogs />
         </div>
       ) : (
         <div className="flex items-center justify-center min-h-screen">
@@ -23,4 +23,4 @@ const ArticlePageLayOut = () => {
   );
 };
 
-export default ArticlePageLayOut;
+export default BlogPageLayOut;

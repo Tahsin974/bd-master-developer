@@ -2,6 +2,7 @@ import { FaArrowRight } from "react-icons/fa6";
 import "./Services.css";
 import ButtonWhite from "../../../Components/ButtonWhite/ButtonWhite";
 import IconShowcase from "../../../Components/IconShowcase/IconShowcase";
+import { HashLink } from "react-router-hash-link";
 const ServiceCard = ({ service }) => {
   const { icon, serviceName, description, services, tools, thumbnail } =
     service;
@@ -39,9 +40,11 @@ const ServiceCard = ({ service }) => {
             <img src={tools} className="max-h-16" />
           </div>
           <div className="card-actions justify-start mt-auto">
-            <ButtonWhite>
-              <span className="btn-link">View Projects</span>
-            </ButtonWhite>
+            <HashLink to="/projects#">
+              <ButtonWhite>
+                <span className="btn-link">View Projects</span>
+              </ButtonWhite>
+            </HashLink>
           </div>
         </div>
       </div>

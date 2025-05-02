@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import UseAxiosPublic from "../../../Utils/AxiosPublic/UseAxiosPublic";
-import "./Articles.css";
+import "./Blogs.css";
 import { FaArrowRight } from "react-icons/fa6";
-const Articles = () => {
+const Blogs = () => {
   const axiosPublic = UseAxiosPublic();
-  const [articles, setArticles] = useState([]);
-  const [displayArticles, setDisplayArticles] = useState([]);
+  const [blogs, setBlogs] = useState([]);
+  const [displayBlogs, setDisplayBlogs] = useState([]);
   const [category, setCategory] = useState("Development");
   const categories = [
     "Development",
@@ -21,22 +21,22 @@ const Articles = () => {
       alert("Please enter a search term");
       return;
     }
-    const matchedArticles = articles.filter((article) =>
+    const matchedBlogs = blogs.filter((article) =>
       article.title.toLowerCase().includes(searchText.toLowerCase())
     );
-    setDisplayArticles(matchedArticles);
+    setDisplayBlogs(matchedBlogs);
   };
   useEffect(() => {
-    axiosPublic.get(`/articles/${category}`).then((res) => {
-      setArticles(res.data);
-      setDisplayArticles(res.data);
+    axiosPublic.get(`/blogs/${category}`).then((res) => {
+      setBlogs(res.data);
+      setDisplayBlogs(res.data);
     });
   }, [category]);
 
   return (
     <div className="bg-[#F8FDFE] min-h-screen ">
       <div className="max-w-[1280px] mx-auto  space-y-5 flex flex-col xl:flex-row lg:flex-row gap-10 ">
-        <aside className="xl:min-h-screen lg:min-h-screen  m-0 xl:w-80 lg:w-80 bg-[#e0e3e4]  border-r py-20  px-6 space-y-3.5">
+        <aside className="xl:min-h-screen lg:min-h-screen  m-0 xl:w-80 lg:w-80 bg-[#e0e3e4]  border-r xl:py-20 lg:py-20 md:py-14 sm:py-12 py-10  px-6 space-y-3.5">
           <h1 className="inter-bold text-xl text-center">Category</h1>
           <div className="space-y-2.5">
             {categories.map((cate, index) => (
@@ -55,7 +55,7 @@ const Articles = () => {
           </div>
         </aside>
 
-        <article className="flex-1 py-20 xl:px-0 lg:px-0 md:px-12 px-6 space-y-6">
+        <article className="flex-1 xl:py-20 lg:py-20 md:py-14 sm:py-12 py-10 xl:px-0 lg:px-0 md:px-12 px-6 space-y-6">
           {/* Search Bar */}
           <form
             onSubmit={handleSearch}
@@ -72,7 +72,7 @@ const Articles = () => {
             </button>
           </form>
           <div className="grid xl:grid-cols-2 lg:grid-cols-2 gap-2.5">
-            {displayArticles.map((article) => (
+            {displayBlogs.map((article) => (
               <div
                 key={article._id}
                 className="card article-card custom-shadow xl:h-[700px] lg:h-[700px] h-[650px] p-4"
@@ -117,4 +117,4 @@ const Articles = () => {
   );
 };
 
-export default Articles;
+export default Blogs;

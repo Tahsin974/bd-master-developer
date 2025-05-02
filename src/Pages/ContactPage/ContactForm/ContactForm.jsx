@@ -8,7 +8,12 @@ import UseAxiosPublic from "../../../Utils/AxiosPublic/UseAxiosPublic";
 import Swal from "sweetalert2";
 const ContactForm = () => {
   const axiosPublic = UseAxiosPublic();
-  const { register, handleSubmit, reset } = useForm();
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm();
   const onSubmit = (data) => {
     axiosPublic.post("/contact", data).then((res) => {
       if (res.data.insertedId) {
@@ -30,7 +35,7 @@ const ContactForm = () => {
   };
   return (
     <div>
-      <div className=" bg-[#F8FDFE] text-[#1D2345] h-[min-content] my-20">
+      <div className=" bg-[#F8FDFE] text-[#1D2345] h-[min-content] xl:py-20 lg:py-20 md:py-14 sm:py-12 py-10">
         <div className="max-w-[1280px] mx-auto px-4 space-y-16">
           <div className="mx-auto w-[max-content] space-y-1.5">
             <h5 className=" xl:text-xl lg:text-xl md:text-xl sm:text-xl text-lg font-semibold ruluko-bold text-[#00626F] uppercase text-center">
@@ -97,6 +102,7 @@ const ContactForm = () => {
                 <form
                   onSubmit={handleSubmit(onSubmit)}
                   className="fieldset xl:grid-cols-2 lg:grid-cols-2 space-y-2.5  gap-2"
+                  autocomplete="off"
                 >
                   <input
                     type="text"
@@ -116,9 +122,16 @@ const ContactForm = () => {
                     type="number"
                     className="input input-sm md:input-md lg:input-lg xl:input-xl w-full bg-[#1d234528] xl:col-span-2 lg:col-span-2 custom-shadow-inner p-5 "
                     placeholder="Phone Number"
-                    {...register("phone")}
-                    required
+                    {...register("phone", {
+                      required: "Number is required",
+                      pattern: {
+                        value: /^(?!.*(\d)(?:[-\s()]?\1){5,})\+?[0-9]\d{6,14}$/,
+                      },
+                    })}
                   />
+                  {errors.phone && (
+                    <span className="text-red-600">Enter a valid number</span>
+                  )}
                   <textarea
                     className="textarea textarea-sm md:textarea-md lg:textarea-lg xl:textarea-xl w-full bg-[#1d234528] xl:col-span-2 lg:col-span-2 h-36 custom-shadow-inner p-5"
                     placeholder="Message"

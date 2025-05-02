@@ -11,7 +11,7 @@ const AboutSection = () => {
        ----------------------------------------------
       */}
 
-      <div className="hero bg-[#F8FDFE] text-[#1D2345]  py-20 min-h-screen">
+      <div className="hero bg-[#F8FDFE] text-[#1D2345]  xl:py-20 lg:py-20 md:py-14 sm:py-12 py-10 min-h-screen">
         {/*
          ----------------------------------------------
         Content Wrapper - Flexbox for responsiveness 

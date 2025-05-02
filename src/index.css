@@ -2,6 +2,10 @@
 
 @plugin "daisyui";
 
+html {
+  scroll-behavior: smooth;
+}
+
 .inter-bold {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;

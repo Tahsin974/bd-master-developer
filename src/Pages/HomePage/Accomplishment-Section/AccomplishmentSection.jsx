@@ -13,7 +13,7 @@ const AccomplishmentSection = () => {
       Accomplishment-Section Container 
        ----------------------------------------------
       */}
-      <div className=" bg-[#F8FDFE] text-[#1D2345] my-24 ">
+      <div className=" bg-[#F8FDFE] text-[#1D2345] xl:py-20 lg:py-20 md:py-14 sm:py-12 py-10 ">
         <div className=" max-w-[1280px] mx-auto xl:px-12 lg:px-12 md:px-12 px-6">
           <div>
             {/*

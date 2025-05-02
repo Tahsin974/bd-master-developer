@@ -7,7 +7,7 @@ import ButtonBlue from "../../../Components/ButtonBlue/ButtonBlue"; // Importing
 const ConsultationSection = () => {
   return (
     // Section container with background color, text color, and padding
-    <section className="bg-[#E6F7FA] text-[#1D2345] my-20 max-w-[1280px] mx-auto rounded-4xl">
+    <section className="bg-[#E6F7FA] text-[#1D2345] xl:my-20 lg:my-20 md:my-14 sm:my-12 my-10 max-w-[1280px] mx-auto rounded-4xl">
       <div className="grid xl:grid-cols-2 lg:grid-cols-2 lg:gap-x-[90px] lg:gap-y-0 xl:gap-x-[90px] xl:gap-y-0 gap-y-20 items-center">
         {/* Left Content: Text and Button */}
         <div className="max-w-lg space-y-6 xl:ps-16 lg:ps-16 xl:px-0 lg:px-0 md:px-4 px-3 xl:pt-0 lg:pt-0 md:pt-6 pt-6">
