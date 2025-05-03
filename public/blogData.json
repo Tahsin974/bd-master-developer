@@ -1,0 +1,12 @@
+{
+  "tag": "Web Development",
+  "title": "The Ultimate Guide to Responsive Design",
+  "description": "Learn how to build websites that adapt to any screen size and provide a seamless user experience. This comprehensive guide covers fluid layouts, flexible images, and media queries. Master the techniques to create truly responsive websites.",
+  "image": "https://i.postimg.cc/YCLKzmxF/image1.jpg",
+  "category": "Development",
+  "slug": "the-ultimate-guide-to-responsive-design",
+  "content": "Responsive web design is a critical skill for any web developer. It ensures that your website adapts smoothly to any screen size. The key elements of responsive design include fluid layouts, flexible images, and media queries. Fluid layouts use relative units like percentages, rather than fixed widths in pixels. Flexible images also scale according to the screen size. Media queries allow you to apply different styles based on the screen's characteristics such as width, height, or resolution. By mastering these techniques, you can build websites that offer an optimal viewing experience on mobile devices, tablets, laptops, and desktops.",
+  "tags": ["Responsive Design", "CSS", "Web Development"],
+  "author": "Tahsinul Islam",
+  "publish_date": "2025-05-03"
+}

@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import UseAxiosPublic from "../../../Utils/AxiosPublic/UseAxiosPublic";
 import "./Blogs.css";
 import { FaArrowRight } from "react-icons/fa6";
+import { HashLink } from "react-router-hash-link";
+
 const Blogs = () => {
   const axiosPublic = UseAxiosPublic();
   const [blogs, setBlogs] = useState([]);
@@ -33,6 +35,7 @@ const Blogs = () => {
     });
   }, [category]);
 
+  console.log(displayBlogs);
   return (
     <div className="bg-[#F8FDFE] min-h-screen ">
       <div className="max-w-[1280px] mx-auto  space-y-5 flex flex-col xl:flex-row lg:flex-row gap-10 ">
@@ -72,40 +75,40 @@ const Blogs = () => {
             </button>
           </form>
           <div className="grid xl:grid-cols-2 lg:grid-cols-2 gap-2.5">
-            {displayBlogs.map((article) => (
+            {displayBlogs.map((blog) => (
               <div
-                key={article._id}
+                key={blog._id}
                 className="card article-card custom-shadow xl:h-[700px] lg:h-[700px] h-[650px] p-4"
               >
                 <figure>
                   {/* Displaying article image */}
-                  <img src={article.image} className="" alt={article.title} />
+                  <img src={blog.image} className="" alt={blog.title} />
                 </figure>
                 <div className="card-body ">
                   {/* Article tag */}
                   <div className="article-tag w-[max-content] text-center px-3 py-1.5 ">
-                    <p className="ruluko-regular text-gray-500">
-                      {article.tag}
-                    </p>
+                    <p className="ruluko-regular text-gray-500">{blog.tag}</p>
                   </div>
 
                   {/* Article title */}
                   <h2 className="xl:text-xl text-base ruluko-bold">
-                    {article.title}
+                    {blog.title}
                   </h2>
 
                   {/* Article description */}
                   <p className="xl:text-lg test-sm ruluko-regular text-gray-500">
-                    {article.description.split(" ").slice(0, 10).join(" ")}
+                    {blog.description.split(" ").slice(0, 10).join(" ")}
                     ...
                   </p>
 
                   {/* Read More button */}
                   <div className="card-actions justify-start ">
-                    <button className="btn bg-transparent border-transparent shadow-none text-[#1D2345] ruluko-bold btn-link items-center flex">
-                      Read More
-                      <FaArrowRight /> {/* Right arrow icon */}
-                    </button>
+                    <HashLink to={`/blogs-details/${blog.slug}`}>
+                      <button className="btn bg-transparent border-transparent shadow-none text-[#1D2345] ruluko-bold btn-link items-center flex">
+                        Read More
+                        <FaArrowRight /> {/* Right arrow icon */}
+                      </button>
+                    </HashLink>
                   </div>
                 </div>
               </div>

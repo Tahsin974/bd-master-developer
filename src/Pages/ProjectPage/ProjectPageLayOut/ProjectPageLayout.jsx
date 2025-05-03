@@ -10,7 +10,7 @@ const ProjectPageLayout = () => {
   // const { loading } = useLoading();
   return (
     <>
-      <div className="hero bg-[#F8FDFE] text-[#1D2345] min-h-screen">
+      <div className="hero bg-[#ffffff] text-[#1D2345] min-h-screen">
         <div className="hero-content text-center">
           <img src={img} alt={`${img}`} />
         </div>

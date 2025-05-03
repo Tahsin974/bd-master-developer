@@ -73,12 +73,12 @@ const HeroSection = () => {
             -------------------------------------------
             */}
             <div className="lg:w-11/12 xl:w-11/12 grid xl:grid-cols-6 lg:grid-cols-6 md:grid-cols-6 grid-cols-3 items-center gap-4 gap-y-8 justify-items-center mt-6">
-              <img src={bootstrap} alt="bootstrap" className="move-up w-10  " />
-              <img src={tailwind} alt="tailwind" className="zoom w-16" />
-              <img src={node} alt="node" className="move-up w-10" />
-              <img src={laravel} alt="laravel" className="half-rotate w-10" />
-              <img src={react} alt="react" className="rotate w-10" />
-              <img src={vue} alt="vue" className="zoom w-10" />
+              <img src={bootstrap} alt="bootstrap" className="move-up" />
+              <img src={tailwind} alt="tailwind" className="zoom" />
+              <img src={node} alt="node" className="move-up" />
+              <img src={laravel} alt="laravel" className="half-rotate " />
+              <img src={react} alt="react" className="rotate" />
+              <img src={vue} alt="vue" className="zoom" />
             </div>
           </div>
           {/*

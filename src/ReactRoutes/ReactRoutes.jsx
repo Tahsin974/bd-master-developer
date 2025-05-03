@@ -7,6 +7,7 @@ import ProjectPageLayout from "../Pages/ProjectPage/ProjectPageLayOut/ProjectPag
 import AboutPageLayout from "../Pages/AboutPage/AboutPageLayOut/AboutPageLayout";
 import ContactPageLayOut from "../Pages/ContactPage/ContactPageLayOut/ContactPageLayOut";
 import BlogPageLayOut from "../Pages/BlogPage/BlogPageLayOut/BlogPageLayOut";
+import BlogDetailsPageLayout from "../Pages/BlogDetailsPage/BlogDetailsPageLayout/BlogDetailsPageLayout";
 
 const router = createBrowserRouter([
   {
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
       {
         path: "/blogs",
         element: <BlogPageLayOut />,
+      },
+      {
+        path: "/blogs-details/:slug",
+        element: <BlogDetailsPageLayout />,
       },
     ],
   },
