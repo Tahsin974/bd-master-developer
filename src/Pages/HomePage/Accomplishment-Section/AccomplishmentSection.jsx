@@ -34,7 +34,7 @@ const AccomplishmentSection = () => {
                     <img src={employee} alt="" className="w-10 h-10" />
                   </div>
 
-                  <h2 className=" font-extrabold text-4xl">35+</h2>
+                  <h2 className=" font-extrabold text-4xl">10+</h2>
 
                   <h5 className="text-lg font-semibold">Employees</h5>
                 </div>
@@ -51,7 +51,7 @@ const AccomplishmentSection = () => {
                     <img src={client} alt="" className="w-10 h-10" />
                   </div>
 
-                  <h2 className=" font-extrabold text-4xl ">3k+</h2>
+                  <h2 className=" font-extrabold text-4xl ">15+</h2>
 
                   <h5 className="text-lg font-semibold">Clients</h5>
                 </div>
@@ -67,7 +67,7 @@ const AccomplishmentSection = () => {
                     <img src={country} alt="" className="w-10 h-10" />
                   </div>
 
-                  <h2 className=" font-extrabold text-4xl ">15+</h2>
+                  <h2 className=" font-extrabold text-4xl ">5+</h2>
 
                   <h5 className="text-lg font-semibold">Countries</h5>
                 </div>

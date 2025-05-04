@@ -4,6 +4,7 @@ import ConsultationSection from "../../Shared/Consultation-Section/ConsultationS
 import OurSupportSection from "../../Shared/OurSupport-Section/OurSupportSection";
 import TestimonialSection from "../../Shared/Testimonial-Section/TestimonialSection";
 import Services from "../Services/Services";
+import img from "../../../assets/Logo/logo 1.png";
 
 const ServicesPageLayout = () => {
   const { loading } = useLoading();
@@ -22,7 +23,7 @@ const ServicesPageLayout = () => {
         </div>
       ) : (
         <div className="flex items-center justify-center min-h-screen">
-          <span className="loading loading-spinner text-primary"></span>
+          <img src={img} alt="loading" className="loading-img" />
         </div>
       )}
     </div>

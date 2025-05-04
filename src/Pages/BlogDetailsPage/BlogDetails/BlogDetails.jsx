@@ -13,7 +13,7 @@ const BlogDetails = () => {
     },
   });
   const { data: latestBlogs = [], isPending: latestBlogsLoad } = useQuery({
-    queryKey: ["latest-blogs"],
+    queryKey: ["latest-blogs", axiosPublic],
     queryFn: async () => {
       const res = await axiosPublic.get(
         `/latest-blogs?status=latest&id=${blogDetails._id}`
@@ -55,7 +55,9 @@ const BlogDetails = () => {
                       </div>
                     </div>
 
-                    <h1 className="text-3xl font-bold">{blogDetails.title}</h1>
+                    <h1 className="xl:text-3xl lg:text-3xl md:text-3xl sm:text-2xl text-xl font-bold">
+                      {blogDetails.title}
+                    </h1>
                     <p className="text-gray-600 mt-4 text-justify">
                       {blogDetails.description}
                     </p>
@@ -63,7 +65,7 @@ const BlogDetails = () => {
                     <div className="prose mt-6 max-w-none space-y-10">
                       {blogDetails.content.sections.map((content, index) => (
                         <div key={index} className="space-y-3">
-                          <h1 className="text-2xl text-left inter-bold">
+                          <h1 className=" xl:text-2xl lg:text-2xl md:text-2xl sm:text-xl text-lg text-left inter-bold">
                             {content.heading}
                           </h1>
                           <p className="ruluko-regular text-base text-justify">
@@ -97,16 +99,14 @@ const BlogDetails = () => {
                         <img src={blog.image} alt="Shoes" />
                       </figure>
                       <div className="card-body">
-                        <h2 className="card-title xl:text-left lg:text-left text-center">
+                        <h2 className=" xl:text-xl lg:text-xl md:text-xl sm:text-xl text-lg inter-bold xl:text-left lg:text-left ">
                           <a href={`/blogs-details/${blog.slug}`}>
                             <span className="visited:text-blue-500 link">
                               {blog.title}
                             </span>
                           </a>
-                          <div className="badge badge-primary">
-                            {blog.status}
-                          </div>
                         </h2>
+                        <div className="badge badge-primary">{blog.status}</div>
                       </div>
                     </div>
                   ))}

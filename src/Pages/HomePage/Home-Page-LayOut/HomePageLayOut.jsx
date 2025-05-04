@@ -9,6 +9,7 @@ import ServiceSection from "../Service-Section/ServiceSection";
 import TeamMemberSection from "../TeamMember-Section/TeamMemberSection";
 import TechnologySection from "../Technology-Section/TechnologySection/TechnologySection";
 import useLoading from "../../../Utils/Hooks/useLoading";
+import img from "../../../assets/Logo/logo 1.png";
 
 const HomePageLayOut = () => {
   const { loading } = useLoading();
@@ -29,7 +30,7 @@ const HomePageLayOut = () => {
         </div>
       ) : (
         <div className="flex items-center justify-center min-h-screen">
-          <span className="loading loading-spinner text-primary"></span>
+          <img src={img} alt="loading" className="loading-img" />
         </div>
       )}
     </div>

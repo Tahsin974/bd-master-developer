@@ -2,6 +2,7 @@ import React from "react";
 import useLoading from "../../../Utils/Hooks/useLoading";
 import PageTitle from "../../../Components/PageTitle/PageTitle";
 import Blogs from "../Blogs/Blogs";
+import img from "../../../assets/Logo/logo 1.png";
 
 const BlogPageLayOut = () => {
   const { loading } = useLoading();
@@ -16,7 +17,7 @@ const BlogPageLayOut = () => {
         </div>
       ) : (
         <div className="flex items-center justify-center min-h-screen">
-          <span className="loading loading-spinner text-primary"></span>
+          <img src={img} alt="loading" className="loading-img" />
         </div>
       )}
     </div>

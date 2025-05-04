@@ -2,6 +2,7 @@ import PageTitle from "../../../Components/PageTitle/PageTitle";
 import useLoading from "../../../Utils/Hooks/useLoading";
 import ContactForm from "../ContactForm/ContactForm";
 import Map from "../Map/Map";
+import img from "../../../assets/Logo/logo 1.png";
 
 const ContactPageLayOut = () => {
   const { loading } = useLoading();
@@ -17,7 +18,7 @@ const ContactPageLayOut = () => {
         </div>
       ) : (
         <div className="flex items-center justify-center min-h-screen">
-          <span className="loading loading-spinner text-primary"></span>
+          <img src={img} alt="loading" className="loading-img" />
         </div>
       )}
     </div>

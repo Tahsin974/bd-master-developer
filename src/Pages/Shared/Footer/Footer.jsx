@@ -101,14 +101,16 @@ const Footer = () => {
           </ul>
           <div>
             <h6 className="inter-bold text-lg mb-1.5">Contract</h6>
-            <div className="space-y-2.5">
+            <div className="space-y-2.5 grid grid-cols-1 items-center">
               <div className="flex items-start gap-3">
-                <IoLocationSharp size={30} className="font-extrabold" />
-                <p>House-15,Road-07,Kalshi, Mipur-11,Dhaka-1216</p>
+                <IoLocationSharp size={25} className="font-extrabold w-2/12" />
+                <p className="w-10/12">
+                  House-15,Road-07,Kalshi, Mipur-11,Dhaka-1216
+                </p>
               </div>
               <div className="flex items-center gap-3">
-                <MdPhoneAndroid size={25} className="font-extrabold" />
-                <p>
+                <MdPhoneAndroid size={25} className="font-extrabold w-2/12" />
+                <p className="w-10/12">
                   +880-176-878-9018
                   <br />
                   +880-172-138-3549
@@ -117,8 +119,8 @@ const Footer = () => {
                 </p>
               </div>
               <div className="flex items-center gap-3">
-                <SlEnvolope size={25} className="font-extrabold" />
-                <p>bdmasterdeveloper@gmail.com</p>
+                <SlEnvolope size={25} className="font-extrabold w-2/12" />
+                <p className="w-10/12">bdmasterdeveloper@gmail.com</p>
               </div>
             </div>
           </div>
@@ -130,7 +132,7 @@ const Footer = () => {
       ------------------------------------------*/}
         <footer className="flex xl:flex-row lg:flex-row flex-col-reverse  bg-transparent justify-between text-white p-4 border-t border-gray-700 gap-3.5">
           <div className="xl:w-2/3 lg:w-2/3">
-            <p className="text-sm">
+            <p className="text-sm xl:text-left lg:text-left text-center">
               Copyright © {new Date().getFullYear()} - All right reserved by BD
               Master Developer
             </p>

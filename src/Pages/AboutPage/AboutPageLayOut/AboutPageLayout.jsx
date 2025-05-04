@@ -9,6 +9,7 @@ import Mission from "../Mission/Mission";
 import Vision from "../Vision/Vision";
 import useLoading from "../../../Utils/Hooks/useLoading";
 import OurTeam from "../OurTeam/OurTeam";
+import img from "../../../assets/Logo/logo 1.png";
 
 const AboutPageLayout = () => {
   const { loading } = useLoading();
@@ -30,7 +31,7 @@ const AboutPageLayout = () => {
         </div>
       ) : (
         <div className="flex items-center justify-center min-h-screen">
-          <span className="loading loading-spinner text-primary"></span>
+          <img src={img} alt="loading" className="loading-img" />
         </div>
       )}
     </div>

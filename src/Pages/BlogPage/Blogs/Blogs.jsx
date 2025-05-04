@@ -103,7 +103,7 @@ const Blogs = () => {
 
                   {/* Read More button */}
                   <div className="card-actions justify-start ">
-                    <HashLink to={`/blogs-details/${blog.slug}`}>
+                    <HashLink to={`/blogs-details/${blog.slug}#`}>
                       <button className="btn bg-transparent border-transparent shadow-none text-[#1D2345] ruluko-bold btn-link items-center flex">
                         Read More
                         <FaArrowRight /> {/* Right arrow icon */}
