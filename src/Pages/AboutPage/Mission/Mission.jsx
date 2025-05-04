@@ -13,7 +13,7 @@ const Mission = () => {
               Our Mission
             </h1>
             <p className="py-6 text-justify ruluko-regular">
-              At <strong>BD Master Developer Agency</strong> , our mission is to
+              At <strong>Bd Master Developer Agency</strong> , our mission is to
               empower businesses through innovative digital solutions that drive
               sustainable growth and measurable success. We specialize in web
               development, API integration, digital marketing, UI/UX design, and

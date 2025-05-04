@@ -14,7 +14,7 @@ const Vision = () => {
               Our Vision
             </h1>
             <p className="py-6 text-justify ruluko-regular">
-              At <strong>BD Master Developer Agency</strong> , our vision is to
+              At <strong>Bd Master Developer Agency</strong> , our vision is to
               lead digital transformation by creating smart, innovative
               solutions that help businesses stay ahead. We aim to deliver
               user-focused experiences that enhance competitiveness and enable
