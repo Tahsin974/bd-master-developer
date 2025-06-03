@@ -9,7 +9,7 @@ const useTechnology = (category) => {
     queryKey: ["technologies", category],
     queryFn: async () => {
       const res = await axiosPublic.get(`/technologies?category=${category}`);
-      return res.data;
+      return Array.isArray(res.data) ? res.data : res.data.data || [];
     },
   });
   return [technologies, isPending];

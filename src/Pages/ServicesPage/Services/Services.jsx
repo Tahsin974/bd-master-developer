@@ -11,7 +11,7 @@ const Services = () => {
     queryKey: ["services"],
     queryFn: async () => {
       const res = await axiosPublic.get(`/services`);
-      return res.data;
+      return Array.isArray(res.data) ? res.data : res.data.data || [];
     },
   });
   console.log(services);

@@ -1,5 +1,5 @@
 import { FaArrowRightLong, FaCheck } from "react-icons/fa6";
-import img from "../../../assets/About-Section/about1.jpg";
+import img from "../../../assets/About-Section/about1.jpeg";
 import "./AboutSection.css";
 import ButtonBlue from "../../../Components/ButtonBlue/ButtonBlue";
 const AboutSection = () => {

@@ -12,7 +12,7 @@ const TestimonialSection = () => {
     queryKey: ["testimonials"],
     queryFn: async () => {
       const res = await axiosPublic.get(`/testimonials`);
-      return res.data;
+      return Array.isArray(res.data) ? res.data : res.data.data || [];
     },
   });
   console.log(testimonials);

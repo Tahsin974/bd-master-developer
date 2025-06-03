@@ -17,7 +17,7 @@ const TeamMemberSection = () => {
     queryKey: ["members"],
     queryFn: async () => {
       const res = await axiosPublic.get(`/members`);
-      return res.data;
+      return Array.isArray(res.data) ? res.data : res.data.data || [];
     },
   });
   console.log(members);

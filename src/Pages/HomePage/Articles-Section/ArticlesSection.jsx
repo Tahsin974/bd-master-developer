@@ -14,7 +14,7 @@ const ArticlesSection = () => {
     queryKey: ["blogs"],
     queryFn: async () => {
       const res = await axiosPublic.get(`/blogs`);
-      return res.data;
+      return Array.isArray(res.data) ? res.data : res.data.data || [];
     },
   });
 

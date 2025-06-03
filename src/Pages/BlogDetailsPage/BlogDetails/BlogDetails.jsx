@@ -18,7 +18,7 @@ const BlogDetails = () => {
       const res = await axiosPublic.get(
         `/latest-blogs?status=latest&id=${blogDetails._id}`
       );
-      return res.data;
+      return Array.isArray(res.data) ? res.data : res.data.data || [];
     },
   });
   console.log(latestBlogs);
