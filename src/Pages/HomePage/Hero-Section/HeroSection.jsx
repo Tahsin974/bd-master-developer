@@ -46,10 +46,10 @@ const HeroSection = () => {
               Innovation Through <span className="text-blue-800">Code</span>
             </h1>
             <p className="py-6 text-lg ruluko-regular text-justify">
-              At BD Master Developer, we specialize in turning bold ideas into
-              reliable software. From startups to enterprises, our expert team
-              delivers web, mobile, and cloud-based applications with precision
-              and passion.
+              At CodexBond, we specialize in turning bold ideas into reliable
+              software. From startups to enterprises, our expert team delivers
+              web, mobile, and cloud-based applications with precision and
+              passion.
             </p>
             {/* 
             ------------------------------------------------
@@ -64,7 +64,7 @@ const HeroSection = () => {
               </a>
 
               <button className="btn btn-green btn-sm md:btn-md lg:btn-lg xl:btn-lg text-[#1D2345]">
-                Sign Up
+                Order Now
               </button>
             </div>
             {/*

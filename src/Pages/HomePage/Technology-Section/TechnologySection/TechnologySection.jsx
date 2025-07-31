@@ -36,10 +36,9 @@ const TechnologySection = () => {
           >
             {/* Subheading text with a description of services */}
             <p className="ruluko-regular font-semibold text-gray-500">
-              <strong>Bd Master Developer</strong> stays ahead with modern
-              technologies to deliver fast, secure, and scalable solutions. From
-              front-end to back-end, we use the latest tools to ensure top-notch
-              performance.{" "}
+              <strong>CodexBond</strong> stays ahead with modern technologies to
+              deliver fast, secure, and scalable solutions. From front-end to
+              back-end, we use the latest tools to ensure top-notch performance.{" "}
             </p>
           </SectionTitle>
 

@@ -30,8 +30,8 @@ const ServiceSection = () => {
             <p className="ruluko-regular font-semibold text-gray-500">
               We offer a full range of digital services including Website
               Development, API Integration, UI/UX Design, SEO, and Digital
-              Marketing. <strong>Bd Master Developer</strong> is your all-in-one
-              tech partner for growth.
+              Marketing. <strong>CodexBond</strong> is your all-in-one tech
+              partner for growth.
             </p>
           </SectionTitle>
 

@@ -91,7 +91,7 @@ const ContactForm = () => {
                       Email Address
                     </h3>
                     <p className=" ruluko-regular text-gray-500">
-                      bdmasterdeveloper@gmail.com
+                      codexbond@gmail.com
                     </p>
                   </div>
                 </li>

@@ -38,9 +38,9 @@ const TestimonialSection = () => {
             >
               <p className="ruluko-regular font-semibold text-gray-500">
                 Our work speaks through the words of our clients. At{" "}
-                <strong>Bd Master Developer</strong>, we believe in building
-                long-term partnerships that deliver real results across web,
-                API, design, and marketing.
+                <strong>CodexBond</strong>, we believe in building long-term
+                partnerships that deliver real results across web, API, design,
+                and marketing.
               </p>
             </SectionTitle>
 

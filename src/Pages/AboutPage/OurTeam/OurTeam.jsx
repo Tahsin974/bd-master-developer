@@ -26,7 +26,7 @@ const OurTeam = () => {
           */}
           <div className="mx-auto w-[max-content] space-y-1.5">
             <h5 className=" xl:text-xl lg:text-xl md:text-xl sm:text-xl text-base font-semibold ruluko-bold text-[#00626F] uppercase text-center">
-              Bd Master Developer Team
+              CodexBond Team
             </h5>
             <h1 className="xl:text-4xl/snug lg:text-4xl/snug md:text-4xl/snug sm:text-4xl/snug text-2xl/snug inter-bold  capitalize">
               Experts Ready to Help

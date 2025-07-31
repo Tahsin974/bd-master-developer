@@ -14,13 +14,13 @@ const Vision = () => {
               Our Vision
             </h1>
             <p className="py-6 text-justify ruluko-regular">
-              At <strong>Bd Master Developer Agency</strong> , our vision is to
-              lead digital transformation by creating smart, innovative
-              solutions that help businesses stay ahead. We aim to deliver
-              user-focused experiences that enhance competitiveness and enable
-              scalable growth. By embracing emerging technologies and fostering
-              deep partnerships, we continuously evolve—empowering our clients
-              to succeed in the ever-changing digital world.
+              At <strong>CodexBond Agency</strong> , our vision is to lead
+              digital transformation by creating smart, innovative solutions
+              that help businesses stay ahead. We aim to deliver user-focused
+              experiences that enhance competitiveness and enable scalable
+              growth. By embracing emerging technologies and fostering deep
+              partnerships, we continuously evolve—empowering our clients to
+              succeed in the ever-changing digital world.
             </p>
           </div>
         </div>

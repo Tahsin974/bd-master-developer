@@ -20,8 +20,8 @@ const Footer = () => {
           <div className="xl:w-1/3 lg:w-1/3 space-y-2.5">
             <img
               src={logo}
-              alt="BD Master Developer Logo"
-              className="w-[297px] md:w-[200px]  h-auto"
+              alt="CodexBond Logo"
+              className="w-[300px] md:w-[200px]  h-auto"
             />
             <p className="text-sm  ">
               Connecting clients with the best freelancers.
@@ -59,31 +59,6 @@ const Footer = () => {
           ---------------------------------------------                              Usefull links    --------------------------------------------- 
           */}
         <div className="grid xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-2 grid-cols-1 px-10 py-5 gap-5">
-          <nav>
-            <h6 className="inter-bold text-lg mb-1.5">Bd Master Developer</h6>
-            <ul>
-              <li>
-                <a href="/about#" className="link link-hover text-gray-400">
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a href="/about#team" className="link link-hover text-gray-400">
-                  Our Team
-                </a>
-              </li>
-              <li>
-                <a href="/services" className="link link-hover text-gray-400">
-                  Services
-                </a>
-              </li>
-              <li>
-                <a href="/blogs#" className="link link-hover text-gray-400">
-                  Blogs
-                </a>
-              </li>
-            </ul>
-          </nav>
           <ul>
             <h6 className="inter-bold text-lg mb-1.5">Services</h6>
             <li className="text-gray-400">Web Development</li>
@@ -92,9 +67,35 @@ const Footer = () => {
             <li className="text-gray-400">Video Editing</li>
             <li className="text-gray-400">UI/UX Design</li>
           </ul>
+          <nav>
+            <h6 className="inter-bold text-lg mb-1.5">Quick Links</h6>
+            <ul>
+              <li>
+                <a href="/about#team" className="link link-hover text-gray-400">
+                  Privacy policy
+                </a>
+              </li>
+              <li>
+                <a href="/services" className="link link-hover text-gray-400">
+                  Order policy
+                </a>
+              </li>
+              <li>
+                <a href="/blogs#" className="link link-hover text-gray-400">
+                  Terms & conditions
+                </a>
+              </li>
+              <li>
+                <a href="/about#" className="link link-hover text-gray-400">
+                  About Us
+                </a>
+              </li>
+            </ul>
+          </nav>
+
           <ul>
             <h6 className="inter-bold text-lg mb-1.5">Supports</h6>
-            <li className="text-gray-400">Lifetime Access</li>
+            <li className="text-gray-400">Quick Fixes</li>
             <li className="text-gray-400">Personalized Project Guidance</li>
             <li className="text-gray-400">Fast Delivery Your Project</li>
             <li className="text-gray-400">Dedicated Client Support</li>
@@ -120,7 +121,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <SlEnvolope size={25} className="font-extrabold w-2/12" />
-                <p className="w-10/12">bdmasterdeveloper@gmail.com</p>
+                <p className="w-10/12">codexbond@gmail.com</p>
               </div>
             </div>
           </div>
@@ -133,8 +134,8 @@ const Footer = () => {
         <footer className="flex xl:flex-row lg:flex-row flex-col-reverse  bg-transparent justify-between text-white p-4 border-t border-gray-700 gap-3.5">
           <div className="xl:w-2/3 lg:w-2/3">
             <p className="text-sm xl:text-left lg:text-left text-center">
-              Copyright © {new Date().getFullYear()} - All right reserved by BD
-              Master Developer
+              Copyright © {new Date().getFullYear()} - All right reserved by
+              CodexBond
             </p>
           </div>
           <div className="flex gap-4 w-[max-context] xl:ms-auto lg:ms-auto mx-auto ">

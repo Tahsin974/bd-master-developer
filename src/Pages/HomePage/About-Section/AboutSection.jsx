@@ -49,9 +49,9 @@ const AboutSection = () => {
             */}
 
             <p className="py-6 text-base ruluko-regular lg:text-left xl:text-left text-justify">
-              BD Master Developer works across multiple domains including
-              software development, dynamic website development, customized
-              software solutions, and modern UI/UX design.
+              CodexBond works across multiple domains including software
+              development, dynamic website development, customized software
+              solutions, and modern UI/UX design.
             </p>
 
             {/* reasons */}

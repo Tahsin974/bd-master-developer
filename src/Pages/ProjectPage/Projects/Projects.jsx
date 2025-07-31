@@ -18,9 +18,9 @@ const Projects = () => {
         >
           {/* A brief description of the section */}
           <p className="ruluko-regular font-semibold text-gray-500">
-            Bd Master Developer works in multiple sectors including website
-            development, API development, Digital Marketing, UI/UX & SEO. Our
-            dream is to continue your journey with success{" "}
+            CodexBond works in multiple sectors including website development,
+            API development, Digital Marketing, UI/UX & SEO. Our dream is to
+            continue your journey with success{" "}
           </p>
         </SectionTitle>
 

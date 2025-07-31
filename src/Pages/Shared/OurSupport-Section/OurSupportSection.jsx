@@ -30,10 +30,10 @@ const OurSupportSection = () => {
 
           <p className="py-6">
             Our experts are just a message away—24/7 assistance guaranteed. Get
-            fast, friendly support whenever you need it. Bd Master Developer
-            works in multiple sectors including website development, API
-            development, Digital Marketing, UI/UX & SEO. Our dream is to
-            continue your journey with success.
+            fast, friendly support whenever you need it. CodexBond works in
+            multiple sectors including website development, API development,
+            Digital Marketing, UI/UX & SEO. Our dream is to continue your
+            journey with success.
           </p>
           {/* Description of the support services */}
 

@@ -1,12 +1,12 @@
-# 🧑‍💻 BD Master Developer - Portfolio Website
+# 🧑‍💻 CodexBond - Portfolio Website
 
-Welcome to the official portfolio of **BD Master Developer**, crafted with modern web technologies to showcase our services, achievements, and the team behind the innovation.
+Welcome to the official portfolio of **CodexBond**, crafted with modern web technologies to showcase our services, achievements, and the team behind the innovation.
 
 🌐 **Live Website**: [https://tahsin-bd-master-developer.netlify.app](https://tahsin-bd-master-developer.netlify.app)
 
 ## 🚀 Overview
 
-BD Master Developer specializes in:
+CodexBond specializes in:
 
 - Full-stack web development
 - Custom software solutions

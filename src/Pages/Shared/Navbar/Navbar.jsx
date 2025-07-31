@@ -130,8 +130,8 @@ const Navbar = ({ children }) => {
                 <HashLink to="/#">
                   <img
                     src={logo}
-                    alt="BD Master Developer Logo"
-                    className="h-[40px] w-auto "
+                    alt="CodexBond Logo"
+                    className="h-[70px] w-auto "
                   />
                 </HashLink>
               </div>
@@ -148,9 +148,11 @@ const Navbar = ({ children }) => {
               {/* Navbar end section */}
               <div className="navbar-end">
                 {/* Appointment Button */}
-                <button className="btn btn-sm md:btn-md lg:btn-lg xl:btn-lg bg-[#4654A4] text-white border-[#4654A4] shadow-none hidden lg:flex xl:flex rounded-3xl">
-                  Sign In
-                </button>
+                <a href="https://api.whatsapp.com/send/?phone=%2B8801768789018">
+                  <button className="btn btn-sm md:btn-md lg:btn-lg xl:btn-lg bg-[#4654A4] text-white border-[#4654A4] shadow-none hidden lg:flex xl:flex rounded-3xl">
+                    Get Support
+                  </button>
+                </a>
 
                 {/* Hamburger menu button for small screens */}
 
@@ -190,7 +192,7 @@ const Navbar = ({ children }) => {
             {navOptions}
             {/* appointment button */}
             <button className="btn btn-sm md:btn-md lg:btn-lg xl:btn-lg bg-[#4654A4] text-white border-[#4654A4] shadow-none rounded-3xl mt-2">
-              Sign In
+              Get Support
             </button>
           </ul>
         </div>

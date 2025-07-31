@@ -2,14 +2,16 @@
   {
     "name": "Md.Rubel Islam",
     "title": "Full Stack Web Developer",
+    "role": "admin",
     "facebookUrl": "https://www.facebook.com/rubel1739",
     "linkedinUrl": "https://www.linkedin.com/in/rubel1739/",
     "websiteUrl": "https://rubelislam.com/",
-    "profileImage": "https://i.postimg.cc/yYfQVRH3/rubel.jpg"
+    "profileImage": "https://i.postimg.cc/nzn3M4sD/rubel.jpg"
   },
   {
     "name": "Siyam Mollah",
     "title": "WordPress Developer",
+    "role": "admin",
     "facebookUrl": "https://www.facebook.com/profile.php?id=100046666962066",
     "linkedinUrl": "https://www.linkedin.com/in/md-siyam-98430429a/",
     "websiteUrl": "#",
@@ -18,6 +20,7 @@
   {
     "name": "Tahsin Islam",
     "title": "MERN Stack Web Developer",
+    "role": "admin",
     "linkedinUrl": "https://www.linkedin.com/in/tahsin-islam477",
     "facebookUrl": "https://www.facebook.com/share/1GeAd7TTtX/",
     "websiteUrl": "#",

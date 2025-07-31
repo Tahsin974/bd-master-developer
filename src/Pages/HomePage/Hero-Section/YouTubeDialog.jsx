@@ -23,7 +23,7 @@ const YouTubeDialog = ({ setOpen, Open }) => {
               </button>
               <div className="flex justify-center items-center">
                 <iframe
-                  src="https://www.youtube.com/embed/350_XyLj4-U?si=-V-E9WDh3Wi4WgCU"
+                  src="https://www.youtube.com/embed/g6l9UYJq7Go?si=0JacQaXXeSRzI6xx"
                   className="w-[900px] h-[500px]"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
