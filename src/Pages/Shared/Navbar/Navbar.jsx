@@ -131,7 +131,7 @@ const Navbar = ({ children }) => {
                   <img
                     src={logo}
                     alt="CodexBond Logo"
-                    className="h-[70px] w-auto "
+                    className="h-[50px] w-auto "
                   />
                 </HashLink>
               </div>
@@ -148,7 +148,7 @@ const Navbar = ({ children }) => {
               {/* Navbar end section */}
               <div className="navbar-end">
                 {/* Appointment Button */}
-                <a href="https://api.whatsapp.com/send/?phone=%2B8801768789018">
+                <a href="https://api.whatsapp.com/send/?phone=%2B8801330923495">
                   <button className="btn btn-sm md:btn-md lg:btn-lg xl:btn-lg bg-[#4654A4] text-white border-[#4654A4] shadow-none hidden lg:flex xl:flex rounded-3xl">
                     Get Support
                   </button>

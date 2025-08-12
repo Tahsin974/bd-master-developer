@@ -18,11 +18,7 @@ const Footer = () => {
         */}
         <div className="lg:flex xl:flex items-start justify-between  gap-10 lg:space-y-0 space-y-6  bg-transparent text-white p-10 ">
           <div className="xl:w-1/3 lg:w-1/3 space-y-2.5">
-            <img
-              src={logo}
-              alt="CodexBond Logo"
-              className="w-[300px] md:w-[200px]  h-auto"
-            />
+            <img src={logo} alt="CodexBond Logo" className="h-[100px]" />
             <p className="text-sm  ">
               Connecting clients with the best freelancers.
             </p>
@@ -36,7 +32,7 @@ const Footer = () => {
               </p>
             </div>
             <div className="xl:w-2/5 lg:w-2/5">
-              <a href="https://api.whatsapp.com/send/?phone=%2B8801768789018">
+              <a href="https://api.whatsapp.com/send/?phone=%2B8801330923495">
                 <button className="btn btn-sm md:btn-md lg:btn-lg xl:btn-lg text-white booking-button  bg-[#004B54] ruluko-bold">
                   Book a Meeting
                 </button>
@@ -71,23 +67,30 @@ const Footer = () => {
             <h6 className="inter-bold text-lg mb-1.5">Quick Links</h6>
             <ul>
               <li>
-                <a href="/about#team" className="link link-hover text-gray-400">
+                <a
+                  href="/privacy-policy"
+                  className="link link-hover text-gray-400"
+                >
                   Privacy policy
                 </a>
               </li>
+
               <li>
-                <a href="/services" className="link link-hover text-gray-400">
-                  Order policy
-                </a>
-              </li>
-              <li>
-                <a href="/blogs#" className="link link-hover text-gray-400">
+                <a
+                  href="/terms-and-conditions"
+                  className="link link-hover text-gray-400"
+                >
                   Terms & conditions
                 </a>
               </li>
               <li>
                 <a href="/about#" className="link link-hover text-gray-400">
                   About Us
+                </a>
+              </li>
+              <li>
+                <a href="/services#" className="link link-hover text-gray-400">
+                  Services
                 </a>
               </li>
             </ul>
@@ -121,7 +124,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <SlEnvolope size={25} className="font-extrabold w-2/12" />
-                <p className="w-10/12">codexbond@gmail.com</p>
+                <p className="w-10/12">info@codexbond.com</p>
               </div>
             </div>
           </div>

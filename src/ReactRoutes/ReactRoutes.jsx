@@ -8,6 +8,8 @@ import AboutPageLayout from "../Pages/AboutPage/AboutPageLayOut/AboutPageLayout"
 import ContactPageLayOut from "../Pages/ContactPage/ContactPageLayOut/ContactPageLayOut";
 import BlogPageLayOut from "../Pages/BlogPage/BlogPageLayOut/BlogPageLayOut";
 import BlogDetailsPageLayout from "../Pages/BlogDetailsPage/BlogDetailsPageLayout/BlogDetailsPageLayout";
+import PrivacyPolicy from "../Pages/PrivacyPolicy/PrivacyPolicy";
+import TermsAndConditions from "../Pages/TermsAndConditions/TermsAndConditions";
 
 const router = createBrowserRouter([
   {
@@ -49,6 +51,14 @@ const router = createBrowserRouter([
       {
         path: "/blogs-details/:slug",
         element: <BlogDetailsPageLayout />,
+      },
+      {
+        path: "/privacy-policy",
+        element: <PrivacyPolicy />,
+      },
+      {
+        path: "/terms-and-conditions",
+        element: <TermsAndConditions />,
       },
     ],
   },

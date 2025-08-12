@@ -29,7 +29,7 @@ const TestimonialSection = () => {
                 <>
                   See How{" "}
                   <span className="text-color bg-gradient-to-r from-[#00ffff] to-blue-800">
-                    BD-Master
+                    CodexBond
                   </span>{" "}
                   Transforms Investing
                 </>

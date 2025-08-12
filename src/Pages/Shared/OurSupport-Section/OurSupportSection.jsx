@@ -1,6 +1,6 @@
 import { FaArrowRightLong } from "react-icons/fa6"; // Importing right-arrow icon from react-icons for button
 import ButtonBlue from "../../../Components/ButtonBlue/ButtonBlue"; // Custom ButtonBlue component
-import diagram from "../../../assets/SupportSection/support.svg";
+import OrbitAnimation from "../../../Components/OrbitAnimation/OrbitAnimation";
 
 const OurSupportSection = () => {
   return (
@@ -10,7 +10,7 @@ const OurSupportSection = () => {
       <div className="hero-content flex-col xl:flex-row lg:flex-row max-w-[1280px] mx-auto lg:gap-x-[90px] lg:gap-y-0 xl:gap-x-[90px] xl:gap-y-0 gap-y-20 xl:px-12 lg:px-12 md:px-12 px-6 ">
         {/* Container for the content, with flex layout, responsive for large screens */}
 
-        <img src={diagram} className="xl:w-1/2 lg:xl:w-1/2" />
+        <OrbitAnimation />
         {/* Image for the right side, with rounded corners and a shadow effect */}
 
         <div className="xl:w-1/2 lg:xl:w-1/2">
@@ -38,7 +38,7 @@ const OurSupportSection = () => {
           {/* Description of the support services */}
 
           <div className="mt-8">
-            <a href="https://api.whatsapp.com/send/?phone=%2B8801768789018">
+            <a href="https://api.whatsapp.com/send/?phone=%2B8801330923495">
               <ButtonBlue>
                 Get Support <FaArrowRightLong />
               </ButtonBlue>
